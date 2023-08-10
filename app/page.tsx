@@ -1,14 +1,19 @@
-import Link from 'next/link';
+import Navbar from './navbar';
 import Presentation from './presentation/page';
+import KeepGoing from './keep-going/page';
+import Programming from './programming/page';
+import Edits from './edits/page';
+import Trading from './trading/page';
 
 export default function Home() {
   return (
     <div className='flex flex-col w-full bg-blue-600'>
+      <Navbar />
       <Presentation />
-      <div className='h-[1200px] w-[200px] bg-green-500'>
-        asd
-      </div>
-      <Link href='/#presentation'>Miau</Link>
+      <KeepGoing />
+      <Programming />
+      <Edits />
+      <Trading />
     </div> 
   )
 }

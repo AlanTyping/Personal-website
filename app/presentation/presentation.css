@@ -36,11 +36,15 @@
     }
 }
 
+::selection {
+    background-color: #00349a78; /* Cambia este valor al color que desees */
+    color: orange; /* Cambia este valor al color del texto deseado */
+  }
+
 #animation-on {
     height: 54vh;
     transition: height 2s;
-    transition-timing-function: ease-out;
-    cursor: pointer
+    transition-timing-function: ease-in-out;
 }
 
 #animation-on div {

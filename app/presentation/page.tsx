@@ -16,8 +16,7 @@ export default function Presentation() {
     useEffect(() => {
         setTimeout(() => {
         setAnimationState('animation-on');
-        alert(animationState);
-    }, 1600);
+    }, 1100);
     }, []);
     
 
@@ -33,19 +32,19 @@ export default function Presentation() {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <Image id="persona-svg" className="z-[1] h-[120px] mr-[153px]" src={Persona} alt='persona-svg' />
+                    <Image id="persona-svg" className="z-[1] h-[125px] mr-[220px]" src={Persona} alt='persona-svg' />
                 </div>
 
                 <div id={`${animationState}`} className="h-[0px] w-full flex flex-col justify-center items-center">
-                    <div id="stars-description" className="bg-[rgba(0,117,255,0.25)] h-full w-[70%] rounded-[50px] border-[1px] border-[#ffa500] hidden">
-                        <h1>Holaasda</h1>
+                    <div id="stars-description" className="bg-[#00349a78] h-full w-[70%] rounded-[25px] border-[1px] border-[#ffa500] hidden">
+                        <h1>Holaassdfksjdfkjsdfkjsdfkjskdfda</h1>
                     </div>
                 </div>
 
                 <div id="svg-presentation-container" className="h-[25vh] w-full flex justify-center">
                     <Image id="pc-presentation-line" className="h-full" src={PresentationLine} alt='presentation-line' />
                     <Image id="mobile-presentation-line" className="hidden" src={MobilePresentationLine} alt='mobile-presentation-line' />
-                    <div id="pc-line-orientation" className="w-[15%]"></div>
+                    <div id="pc-line-orientation" className="w-[20%]"></div>
                 </div>
             </div>
         </div>
