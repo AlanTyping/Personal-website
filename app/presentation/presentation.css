@@ -36,8 +36,7 @@
     }
 }
 
-::selection {
-    background-color: #00349a78; /* Cambia este valor al color que desees */
+::selection { /* Cambia este valor al color que desees */
     color: orange; /* Cambia este valor al color del texto deseado */
   }
 
@@ -47,9 +46,14 @@
     transition-timing-function: ease-in-out;
 }
 
-#animation-on div {
+#animation-on div{
     display: flex;
-    justify-content: center;
+}
+
+#second-animation-on {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
