@@ -42,7 +42,7 @@
 
 #animation-on {
     height: 54vh;
-    transition: height 2s;
+    transition: height 1.5s;
     transition-timing-function: ease-in-out;
 }
 
