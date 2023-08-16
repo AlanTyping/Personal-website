@@ -48,6 +48,7 @@
 
 #animation-on div{
     display: flex;
+    align-items: center;
 }
 
 #second-animation-on {

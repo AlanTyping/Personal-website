@@ -10,11 +10,11 @@ import MobilePresentationLine from './utilities/presentation-line-mobile.svg';
 import './presentation.css';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+
 const poppins = Poppins({
     weight: '300',
     subsets: ['latin']
 })
-
 
 export default function Presentation() {
     const [animationState, setAnimationState] = useState('animation-off');
@@ -47,21 +47,21 @@ export default function Presentation() {
 
                 <div id={`${animationState}`} className="h-[0px] w-full flex flex-col justify-center items-center poppins">
                     <div id="stars-description" className="bg-[rgba(0,52,154,0.25)] h-full w-[70%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500] hidden">
-                        <div id={`stars-descript`} className={secondAnimationState ? 'h-full w-full flex flex-col items-center text-white' : 'hidden'}>
+                        <div id={`stars-descript`} className={secondAnimationState ? 'relative h-full w-full flex flex-col items-center text-white' : 'hidden'}>
                             {secondAnimationState ?
                                 <>
                                     <motion.div
                                         initial={{ x: -100, opacity: 0 }}
                                         animate={{ x: 0, scale: 1, opacity: 1 }}
                                         transition={{ duration: 0.2 }}
-                                        className={'w-[85%] h-[20%] flex justify-start items-center'}>
+                                        className={'w-[85%] mt-[2%] h-[20%] flex justify-start items-center'}>
                                         <h2 id='presentation-title' className={'text-[1.9rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-[60%]'}>About</h2>
                                     </motion.div>
-                                    <motion.p 
-                                    initial={{ x: -100, opacity: 0 }}
-                                    animate={{ x: 0, scale: 1, opacity: 1  }}
-                                    transition={{ duration: 0.3 }}
-                                    id='presentation-text' className={'w-[85%] text-[1.25rem]'}>
+                                    <motion.p
+                                        initial={{ x: -100, opacity: 0 }}
+                                        animate={{ x: 0, scale: 1, opacity: 1 }}
+                                        transition={{ duration: 0.3 }}
+                                        id='presentation-text' className={'w-[85%] mt-[1%] text-[1.25rem]'}>
                                         In pursuit of ways to improve the world and bring prosperity.
                                         I think that the only entity that persist over time is change, and that's pretty
                                         much the reason why I love doing what I do, because things can may never be perfects
