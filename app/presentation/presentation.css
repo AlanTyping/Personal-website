@@ -29,10 +29,6 @@
     filter: brightness(0.9);
 }
 
-#stars-container {
-    height: 700px;
-}
-
 .bartolomeo {
     display: flex;
     align-items: center;

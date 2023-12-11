@@ -43,7 +43,7 @@ export default function Presentation() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div id="stars-container" className="w-[100vw] flex flex-col relative justify-end items-center">
+      <div className="w-[100vw] h-[650px] flex flex-col relative justify-end items-center">
 
         <div id="luna-svg-container" className="flex h-[160px] absolute top-[-8px]">
           <Image id="luna-svg" className="h-[100px] w-auto ml-10" src={Luna} alt="luna-svg" />
@@ -72,7 +72,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
-                    className={"w-[85%] mt-8 h-[75px] flex justify-start items-center"}>
+                    className={"w-[85%] mt-3 h-[75px] flex justify-start items-center"}>
                     <h2 className={"text-[1.9rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-[60%]"}>About</h2>
                   </motion.div>
 
@@ -80,7 +80,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    id="presentation-text" className={"w-[80%] mt-2 text-[1.05rem]"}>
+                    id="presentation-text" className={"w-[80%] mt-1 text-[1.05rem]"}>
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
                     much the reason why I love doing what I do, because things can may never be perfects
