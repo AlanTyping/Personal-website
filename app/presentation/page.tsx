@@ -30,19 +30,19 @@ export default function Presentation() {
   }, []);
 
   const container = {
-    hidden: { opacity: 0, height: 0 },
+    hidden: { opacity: 0, height: "var(--height-from)" },
     visible: {
       opacity: 1,
-      height: 400
+      height: "var(--height-to)"
     }
   }
 
   return (
     <div id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div className="w-[100vw] h-[650px] flex flex-col relative justify-end items-center">
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
+      <div className="w-[100vw] h-[770px] md:h-[650px] flex flex-col relative justify-end items-center">
 
         <div id="luna-svg-container" className="flex h-[160px] absolute top-[-8px]">
           <Image id="luna-svg" className="h-[100px] w-auto ml-10" src={Luna} alt="luna-svg" />
@@ -60,11 +60,11 @@ export default function Presentation() {
           variants={container}
           id={`${animationState}`}
 
-          className="w-full flex flex-col items-center">
+          className="w-full flex flex-col items-center [--height-from:0px] [--height-to:500px] sm:[--height-to:400px]">
 
           <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
-            <div className={secondAnimationState ? "overflow-y-auto lg:overflow-hidden relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
+            <div className={secondAnimationState ? "relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
               {secondAnimationState &&
                 <>
                   <motion.div
@@ -88,7 +88,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-5 pb-5 sm:pb-0 text-[1.03rem] sm:text-[1.15rem]"}>
+                    className={"w-[80%] sm:w-[85%] mt-5 pb-8 sm:pb-0 text-[1.03rem] sm:text-[1.15rem]"}>
 
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
