@@ -60,11 +60,11 @@ export default function Presentation() {
           variants={container}
           id={`${animationState}`}
 
-          className="w-full flex flex-col items-center [--height-from:0px] [--height-to:500px] sm:[--height-to:400px]">
+          className="w-full flex flex-col items-center [--height-from:0px] [--height-to:475px] sm:[--height-to:400px]">
 
           <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
-            <div className={secondAnimationState ? "relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
+            <div className={secondAnimationState ? "relative h-full w-full flex flex-col items-center justify-start text-white" : "hidden"}>
               {secondAnimationState &&
                 <>
                   <motion.div
@@ -88,7 +88,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-5 pb-8 sm:pb-0 text-[1.03rem] sm:text-[1.15rem]"}>
+                    className={"w-[80%] sm:w-[85%] mt-5 sm:pb-0 text-[1.03rem] sm:text-[1.15rem]"}>
 
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
