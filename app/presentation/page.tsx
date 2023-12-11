@@ -49,7 +49,7 @@ export default function Presentation() {
         </div>
 
         <div className="flex justify-center items-center">
-          <Image id="persona-svg" className="z-[1] h-[130px] w-auto mr-[210px]" src={Persona} alt="persona-svg" />
+          <Image id="persona-svg" className="z-[1] h-[130px] mb-[-1px] w-auto mr-[210px]" src={Persona} alt="persona-svg" />
         </div>
 
         <motion.div
@@ -62,16 +62,16 @@ export default function Presentation() {
 
           className="w-full flex flex-col items-center">
 
-          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] sm:w-[60%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
+          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
-            <div className={secondAnimationState ? "overflow-y-auto md:overflow-hidden relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
+            <div className={secondAnimationState ? "overflow-y-auto lg:overflow-hidden relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
               {secondAnimationState &&
                 <>
                   <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
-                    className={"w-[85%] mt-5 h-[75px] flex justify-start items-center"}>
+                    className={"w-[85%] sm:w-[90%] mt-5 sm:mt-2 h-[75px] flex justify-start items-center"}>
                     <h2 className={"text-[1.8rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto"}>About</h2>
                   </motion.div>
 
@@ -79,23 +79,20 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    id="presentation-text" className={"w-[80%] mt-5 text-[1.03rem]"}>
-
-                    In pursuit of ways to improve the world and bring prosperity.
-                    I think that the only entity that persist over time is change, and that&apos;s pretty
-                    much the reason why I love doing what I do, because things can may never be perfects
-                    but they can always be improved
+                    className={"w-[80%] sm:w-[85%] mt-5 sm:mt-4 text-[1.03rem] sm:text-[1.15rem]"}>
+                      Developer from Argentina, currently 19 years old and able to face any challenge 
+                      in order to grow and improve.
                   </motion.p>
                   <br />
                   <motion.p
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    id="presentation-text" className={"w-[80%] mt-5 pb-5 text-[1.03rem]"}>
+                    className={"w-[80%] sm:w-[85%] mt-5 pb-5 sm:pb-0 text-[1.03rem] sm:text-[1.15rem]"}>
 
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
-                    much the reason why I love doing what I do, because things can may never be perfects
+                    much the reason why I love doing what I do, because things can may never be perfect
                     but they can always be improved
                   </motion.p>
                 </>
