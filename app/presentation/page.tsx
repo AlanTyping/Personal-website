@@ -33,10 +33,9 @@ export default function Presentation() {
     hidden: { opacity: 0, height: 0 },
     visible: {
       opacity: 1,
-      height: 500
+      height: 400
     }
   }
-
 
   return (
     <div id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
@@ -61,26 +60,39 @@ export default function Presentation() {
           variants={container}
           id={`${animationState}`}
 
-          className="w-full h-[400px] flex flex-col items-center">
+          className="w-full flex flex-col items-center">
 
-          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
+          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] sm:w-[60%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
-            <div className={secondAnimationState ? "relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
+            <div className={secondAnimationState ? "overflow-y-auto md:overflow-hidden relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
               {secondAnimationState &&
                 <>
                   <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
-                    className={"w-[85%] mt-3 h-[75px] flex justify-start items-center"}>
-                    <h2 className={"text-[1.9rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-[60%]"}>About</h2>
+                    className={"w-[85%] mt-5 h-[75px] flex justify-start items-center"}>
+                    <h2 className={"text-[1.8rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto"}>About</h2>
                   </motion.div>
 
                   <motion.p
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    id="presentation-text" className={"w-[80%] mt-1 text-[1.05rem]"}>
+                    id="presentation-text" className={"w-[80%] mt-5 text-[1.03rem]"}>
+
+                    In pursuit of ways to improve the world and bring prosperity.
+                    I think that the only entity that persist over time is change, and that&apos;s pretty
+                    much the reason why I love doing what I do, because things can may never be perfects
+                    but they can always be improved
+                  </motion.p>
+                  <br />
+                  <motion.p
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                    id="presentation-text" className={"w-[80%] mt-5 pb-5 text-[1.03rem]"}>
+
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
                     much the reason why I love doing what I do, because things can may never be perfects
@@ -95,11 +107,11 @@ export default function Presentation() {
           </div>
         </motion.div>
 
-        <div id="svg-presentation-container" className="w-full flex justify-center">
+        <div className="w-full flex justify-center">
 
-          <Image id="mobile-presentation-line" className="h-[130px] w-auto mr-48 sm:hidden" src={MobilePresentationLine} alt="mobile-presentation-line" />
+          <Image id="mobile-presentation-line" className="h-[130px] w-auto mr-48 md:hidden" src={MobilePresentationLine} alt="mobile-presentation-line" />
 
-          <Image id="pc-presentation-line" className="h-full w-auto" src={PresentationLine} alt="presentation-line" />
+          <Image className="h-[180px] w-auto hidden md:flex" src={PresentationLine} alt="presentation-line" />
           <div id="pc-line-orientation" className="w-[20%]" />
 
         </div>
