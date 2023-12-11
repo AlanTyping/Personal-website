@@ -23,10 +23,10 @@ export default function Presentation() {
   useEffect(() => {
     setTimeout(() => {
       setAnimationState(true);
-    }, 700);
+    }, 900);
     setTimeout(() => {
       setSecondAnimationState(true);
-    }, 1400);
+    }, 1800);
   }, []);
 
   const container = {
