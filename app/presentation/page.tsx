@@ -88,7 +88,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-5 sm:pb-0"}>
+                    className={"w-[80%] sm:w-[85%] mt-4 sm:pb-0"}>
 
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
