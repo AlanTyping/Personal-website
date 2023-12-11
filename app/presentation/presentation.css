@@ -12,19 +12,10 @@
     }
 }
 
-::selection { /* Cambia este valor al color que desees */
-    color: orange; /* Cambia este valor al color del texto deseado */
-  }
-
-#animation-on {
-    height: 500px;
-    transition: height 1.5s;
-    transition-timing-function: ease-in-out;
-}
-
-#animation-on div{
-    display: flex;
-    align-items: center;
+::selection {
+    /* Cambia este valor al color que desees */
+    color: orange;
+    /* Cambia este valor al color del texto deseado */
 }
 
 #second-animation-on {

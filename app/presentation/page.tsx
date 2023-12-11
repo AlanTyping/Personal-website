@@ -17,17 +17,25 @@ const poppins = Poppins({
 })
 
 export default function Presentation() {
-  const [animationState, setAnimationState] = useState("animation-off");
+  const [animationState, setAnimationState] = useState(false);
   const [secondAnimationState, setSecondAnimationState] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setAnimationState("animation-on");
+      setAnimationState(true);
     }, 700);
     setTimeout(() => {
       setSecondAnimationState(true);
-    }, 2200);
+    }, 1400);
   }, []);
+
+  const container = {
+    hidden: { opacity: 0, height: 0 },
+    visible: {
+      opacity: 1,
+      height: 500
+    }
+  }
 
 
   return (
@@ -45,9 +53,17 @@ export default function Presentation() {
           <Image id="persona-svg" className="z-[1] h-[130px] w-auto mr-[210px]" src={Persona} alt="persona-svg" />
         </div>
 
-        <div id={`${animationState}`} className="w-full flex flex-col items-center">
+        <motion.div
+          initial="hidden"
+          transition={{ duration: 1 }}
+          animate={animationState ? "visible" : "hidden"}
+          exit={{ opacity: 0 }}
+          variants={container}
+          id={`${animationState}`}
 
-          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500] hidden">
+          className="w-full h-[400px] flex flex-col items-center">
+
+          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
             <div className={secondAnimationState ? "relative h-full w-full flex flex-col items-center text-white" : "hidden"}>
               {secondAnimationState &&
@@ -56,15 +72,15 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
-                    className={"w-[85%] mt-[2%] h-[75px] flex justify-start items-center"}>
-                    <h2 id="presentation-title" className={"text-[1.9rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-[60%]"}>About</h2>
+                    className={"w-[85%] mt-8 h-[75px] flex justify-start items-center"}>
+                    <h2 className={"text-[1.9rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-[60%]"}>About</h2>
                   </motion.div>
 
                   <motion.p
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    id="presentation-text" className={"w-[80%] mt-[1%] text-[1.05rem]"}>
+                    id="presentation-text" className={"w-[80%] mt-2 text-[1.05rem]"}>
                     In pursuit of ways to improve the world and bring prosperity.
                     I think that the only entity that persist over time is change, and that&apos;s pretty
                     much the reason why I love doing what I do, because things can may never be perfects
@@ -77,7 +93,7 @@ export default function Presentation() {
             </div>
 
           </div>
-        </div>
+        </motion.div>
 
         <div id="svg-presentation-container" className="w-full flex justify-center">
 
