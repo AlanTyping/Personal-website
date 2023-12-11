@@ -1,7 +1,7 @@
 'use client'
 
 import { Poppins } from 'next/font/google';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import React from 'react';
 import Luna from './utilities/Luna.svg';
 import Persona from './utilities/Persona.svg';
@@ -29,8 +29,6 @@ export default function Presentation() {
     }, 2200);
   }, []);
 
-  console.log(animationState)
-
 
   return (
     <div id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
@@ -40,14 +38,14 @@ export default function Presentation() {
       <div id="stars-container" className="w-[100vw] flex flex-col relative justify-end items-center">
 
         <div id="luna-svg-container" className="flex h-[160px] absolute top-[-8px]">
-          <Image id="luna-svg" className="h-[100px] ml-10" src={Luna} alt='luna-svg' />
+          <Image id="luna-svg" className="h-[100px] w-auto ml-10" src={Luna} alt='luna-svg' />
         </div>
 
         <div className="flex justify-center items-center">
-          <Image id="persona-svg" className="z-[1] h-[130px] mr-[210px]" src={Persona} alt='persona-svg' />
+          <Image id="persona-svg" className="z-[1] h-[130px] w-auto mr-[210px]" src={Persona} alt='persona-svg' />
         </div>
 
-        <div id={`${animationState}`} className="w-full flex flex-col justify-center items-center">
+        <div id={`${animationState}`} className="w-full flex flex-col items-center">
 
           <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500] hidden">
 
@@ -84,9 +82,9 @@ export default function Presentation() {
 
         <div id="svg-presentation-container" className="w-full flex justify-center">
 
-          <Image id="mobile-presentation-line" className="h-[130px] sm:hidden" src={MobilePresentationLine} alt='mobile-presentation-line' />
+          <Image id="mobile-presentation-line" className="h-[130px] w-auto mr-48 sm:hidden" src={MobilePresentationLine} alt='mobile-presentation-line' />
 
-          <Image id="pc-presentation-line" className="h-full" src={PresentationLine} alt='presentation-line' />
+          <Image id="pc-presentation-line" className="h-full w-auto" src={PresentationLine} alt='presentation-line' />
           <div id="pc-line-orientation" className="w-[20%]" />
 
         </div>
