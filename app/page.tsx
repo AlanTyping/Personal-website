@@ -8,7 +8,7 @@ import Trading from './trading/page';
 export default function Home() {
   return (
     <div className='flex flex-col w-full bg-blue-600'>
-      <Navbar />
+      {/* <Navbar /> */}
       <Presentation />
       <KeepGoing />
       <Programming />

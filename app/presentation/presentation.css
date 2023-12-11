@@ -1,38 +1,14 @@
 @media (max-width: 450px) {
     #stars-animation {
-        height: 850px;
-    }
-
-    #stars-description {
-        height: 460px;
-        width: 90%;
-        border-radius: 6%;
-    }
-
-    /* }
-    #stars-description-container {
-      height: 460px;
-    } */
-    #svg-presentation-container {
-        height: 212px;
+        height: 700px;
     }
 
     #pc-presentation-line {
         display: none;
     }
 
-    #mobile-presentation-line {
-        display: block;
-        height: 227px;
-    }
-
     #pc-line-orientation {
         display: none;
-    }
-
-    #luna-svg-container {
-        height: 160px;
-        justify-content: end;
     }
 }
 
@@ -41,7 +17,7 @@
   }
 
 #animation-on {
-    height: 54vh;
+    height: 500px;
     transition: height 1.5s;
     transition-timing-function: ease-in-out;
 }
@@ -63,18 +39,13 @@
 }
 
 #stars-container {
-    height: 100vh;
-    height: 100dvh;
+    height: 700px;
 }
 
 .bartolomeo {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#luna-svg {
-    width: clamp(300px, 37%, 1200px);
 }
 
 #presentation {
