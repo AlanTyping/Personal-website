@@ -66,7 +66,7 @@ export default function Presentation() {
                     transition={{ duration: 0.3 }}
                     id='presentation-text' className={'w-[80%] mt-[1%] text-[1.05rem]'}>
                     In pursuit of ways to improve the world and bring prosperity.
-                    I think that the only entity that persist over time is change, and that's pretty
+                    I think that the only entity that persist over time is change, and that&apos;s pretty
                     much the reason why I love doing what I do, because things can may never be perfects
                     but they can always be improved
                   </motion.p>
