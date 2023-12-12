@@ -15,7 +15,8 @@ export const Timeline = () => {
       icon: web,
       date: 'November 2023 - December 2023',
       link: 'https://school-showcase.vercel.app/',
-      image: school
+      image: school,
+      color: '#9b650086'
     },
     {
       name: "Bluetrading",
@@ -23,7 +24,8 @@ export const Timeline = () => {
       icon: web,
       date: 'July 2023 - November 2023',
       link: 'https://bluetrading.vercel.app/',
-      image: trading
+      image: trading,
+      color: '#00205f9d'
     },
     
     {
@@ -32,7 +34,8 @@ export const Timeline = () => {
       icon: web,
       date: 'December 2022 - March 2023',
       link: 'https://speedcube-timer.vercel.app/',
-      image: speed
+      image: speed,
+      color: '#0099ff36'
     },
     
     {
@@ -41,7 +44,8 @@ export const Timeline = () => {
       icon: web,
       date: 'Octuber 2022 - November 2022',
       link: 'https://flashtyping.netlify.app/',
-      image: flash
+      image: flash,
+      color: '#007ac03a'
     },
   ]
 
@@ -57,6 +61,7 @@ export const Timeline = () => {
             date={e.date}
             link={e.link}
             image={e.image}
+            color={e.color}
           />)
         }
       </ul>
