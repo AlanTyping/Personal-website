@@ -29,7 +29,7 @@ export const Item = ({ name, descripcion, icon, date, link, image }: Props) => {
         <div className="h-auto w-full flex-center justify-center rounded mt-8">
           <div className="bg-[#012979] overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 relative flex-col border-b-[6px] border-[#ffa500]">
           <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />
-          <div className='hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] bg-[#00205fb4]' />
+          <div className='hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] bg-[#00205f9d]' />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 flex justify-start z-[1]'> 
               <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] ${poppins500.className}`}>{name}</h2>
