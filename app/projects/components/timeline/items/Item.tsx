@@ -15,7 +15,7 @@ type Props = {
 export const Item = ({ name, descripcion, icon, date, link, image }: Props) => {
   return (
     <li>
-      <div className="h-auto py-10 w-[98vw] flex flex-row justify-center items-center relative">
+      <div className="h-auto py-10 w-[98vw] lg:w-[90vw] flex flex-row justify-center items-center relative">
         <div className="h-full w-[10%] absolute left-0">
           <div className='w-full h-full relative flex-center flex-col items-center'>
             <div className='h-full w-[3px] sm:w-[5px] bg-[#0040c0]' />
