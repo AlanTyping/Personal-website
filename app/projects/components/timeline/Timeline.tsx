@@ -5,8 +5,6 @@ import school from '../../assets/school.png';
 import trading from '../../assets/trading.png';
 import { Item } from './items/Item';
 
-console.log(school)
-
 export const Timeline = () => {
   const projects = [
     {
@@ -30,7 +28,7 @@ export const Timeline = () => {
   ]
 
   return (
-    <div>
+    <div className='mt-20'>
       <ul>
         {projects.map(e =>
           <Item

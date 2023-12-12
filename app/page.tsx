@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <div className={`flex-center h-auto justify-center flex-col w-full bg-blue-600 ${poppins.className}`}>
+    <div className={`flex-center h-auto flex-col w-full bg-blue-600 ${poppins.className}`}>
       {/* <Navbar /> */}
       <Presentation />
       <KeepGoing />
