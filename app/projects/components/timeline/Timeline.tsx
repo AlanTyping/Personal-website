@@ -28,7 +28,7 @@ export const Timeline = () => {
   ]
 
   return (
-    <div className='mt-20'>
+    <div className='mt-10'>
       <ul>
         {projects.map(e =>
           <Item

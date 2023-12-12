@@ -1,6 +1,5 @@
 "use client"
 
-import { Poppins } from "next/font/google";
 import { motion } from "framer-motion";
 import React from "react";
 import Luna from "./utilities/Luna.svg";
@@ -10,16 +9,8 @@ import MobilePresentationLine from "./utilities/presentation-line-mobile.svg";
 import "./presentation.css";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-
-const poppins = Poppins({
-  weight: "300",
-  subsets: ["latin"]
-})
-
-const poppins500 = Poppins({
-  weight: "500",
-  subsets: ["latin"]
-})
+import { poppins500 } from "../utilities/fonts";
+import { poppins800 } from "../utilities/fonts";
 
 export default function Presentation() {
   const [animationState, setAnimationState] = useState(false);
@@ -43,7 +34,7 @@ export default function Presentation() {
   }
 
   return (
-    <section id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
+    <section id="presentation" className={`h-auto w-[100%]`}>
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />

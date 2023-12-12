@@ -4,16 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 import { Timeline } from './components/timeline/Timeline';
-
-const poppins500 = Poppins({
-  weight: "500",
-  subsets: ["latin"]
-})
-
-const poppins800 = Poppins({
-  weight: "800",
-  subsets: ["latin"]
-})
+import { poppins500 } from '../utilities/fonts';
+import { poppins800 } from '../utilities/fonts';
 
 export default function Projects() {
   return (
