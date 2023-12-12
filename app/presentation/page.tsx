@@ -16,6 +16,11 @@ const poppins = Poppins({
   subsets: ["latin"]
 })
 
+const poppins500 = Poppins({
+  weight: "500",
+  subsets: ["latin"]
+})
+
 export default function Presentation() {
   const [animationState, setAnimationState] = useState(false);
   const [secondAnimationState, setSecondAnimationState] = useState(false);
@@ -38,7 +43,7 @@ export default function Presentation() {
   }
 
   return (
-    <div id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
+    <section id="presentation" className={`h-auto w-[100%] ${poppins.className}`}>
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />
@@ -72,7 +77,7 @@ export default function Presentation() {
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
                     className={"w-[85%] sm:w-[90%] mt-5 sm:mt-2 h-[75px] flex justify-start items-center"}>
-                    <h2 className={"text-[1.8rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto"}>About</h2>
+                    <h2 className={`text-[1.8rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto ${poppins500.className}`}>About</h2>
                   </motion.div>
 
                   <motion.p
@@ -113,6 +118,6 @@ export default function Presentation() {
 
         </div>
       </div>
-    </div >
+    </section>
   )
 }
