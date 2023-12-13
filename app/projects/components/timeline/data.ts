@@ -16,7 +16,7 @@ export const projects = [
     },
     {
         name: "Bluetrading",
-        descripcion: "One of the problem in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rigid rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
+        descripcion: "One of the problems in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rigid rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
         icon: web,
         date: 'July 2023 - November 2023',
         link: 'https://bluetrading.vercel.app/',
