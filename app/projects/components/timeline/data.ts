@@ -12,7 +12,7 @@ export const projects = [
         date: 'November 2023 - December 2023',
         link: 'https://school-showcase.vercel.app/',
         image: school,
-        color: '#9b650086'
+        color: 'bg-[#9b650086]'
     },
     {
         name: "Bluetrading",
@@ -21,7 +21,7 @@ export const projects = [
         date: 'July 2023 - November 2023',
         link: 'https://bluetrading.vercel.app/',
         image: trading,
-        color: '#00205f9d'
+        color: 'bg-[#00205f9d]'
     },
 
     {
@@ -31,7 +31,7 @@ export const projects = [
         date: 'December 2022 - March 2023',
         link: 'https://speedcube-timer.vercel.app/',
         image: speed,
-        color: '#0099ff36'
+        color: 'bg-[#0099ff36]'
     },
 
     {
@@ -41,6 +41,6 @@ export const projects = [
         date: 'Octuber 2022 - November 2022',
         link: 'https://flashtyping.netlify.app/',
         image: flash,
-        color: '#007ac03a'
+        color: 'bg-[#007ac03a]'
     },
 ]

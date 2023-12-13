@@ -79,7 +79,6 @@ export default function Presentation() {
                       Developer from Argentina, currently 19 years old and able to face any challenge 
                       in order to grow and increase my knowledge.
                   </motion.p>
-                  <br />
                   <motion.p
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
