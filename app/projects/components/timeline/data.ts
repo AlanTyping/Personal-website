@@ -25,7 +25,7 @@ export const projects = [
     },
 
     {
-        name: "Speed cube",
+        name: "Speed Cube",
         descripcion: "Since I love solving the Rubik's Cube as a hobby, I developed a web app to automatically calculate the average time after 5 solves (It's only available for PC).",
         icon: web,
         date: 'December 2022 - March 2023',
