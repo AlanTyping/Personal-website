@@ -45,7 +45,7 @@ export default function Presentation() {
         </div>
 
         <div className="flex justify-center items-center">
-          <Image id="persona-svg" className="z-[1] h-[130px] 2xl:h-[170px] mb-[-1px] 2xl:mb-[-2px] w-auto mr-[210px] 2xl:mr-[300px]" src={Persona} alt="persona-svg" />
+          <Image id="persona-svg" className="z-[1] h-[130px] 2xl:h-[170px] mb-[-1px] w-auto mr-[210px] 2xl:mr-[300px]" src={Persona} alt="persona-svg" />
         </div>
 
         <motion.div
