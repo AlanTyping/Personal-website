@@ -45,7 +45,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
                 <span className='text-[0.9rem] sm:text-[1.1rem] lg:text-[1.1rem] 2xl:text-[1.5rem] text-[#b4b4b4]'>{date}</span>
               </div>
               <div className='w-full mt-4 flex justify-start px-1'>
-                <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.8rem] text-[#d8d8d8]'>{descripcion}</p>
+                <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.8rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
                 <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins500.className}`}>visit site</Link>

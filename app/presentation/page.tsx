@@ -75,7 +75,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-5 sm:mt-4 2xl:mt-10"}>
+                    className={"w-[80%] sm:w-[85%] mt-3 sm:mt-4 2xl:mt-10"}>
                       Developer from Argentina, currently 19 years old and able to face any challenge 
                       in order to grow and increase my knowledge.
                   </motion.p>
