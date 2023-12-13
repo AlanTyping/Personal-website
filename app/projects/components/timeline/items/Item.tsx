@@ -42,7 +42,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
 
             <div className='h-full w-full p-2 z-[1]'>
               <div className='w-full mt-2 flex justify-start'>
-                <span className='text-[0.9rem] sm:text-[1.1rem] lg:text-[1.2rem] text-[#d8d8d8]'>{date}</span>
+                <span className='text-[0.9rem] sm:text-[1.1rem] lg:text-[1.1rem] text-[#d8d8d8]'>{date}</span>
               </div>
               <div className='w-full mt-4 flex justify-start px-1'>
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] text-[#d8d8d8]'>{descripcion}</p>

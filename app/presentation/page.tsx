@@ -77,7 +77,7 @@ export default function Presentation() {
                     transition={{ duration: 0.3 }}
                     className={"w-[80%] sm:w-[85%] mt-5 sm:mt-4"}>
                       Developer from Argentina, currently 19 years old and able to face any challenge 
-                      in order to grow and improve.
+                      in order to grow and increase my knowledge.
                   </motion.p>
                   <br />
                   <motion.p

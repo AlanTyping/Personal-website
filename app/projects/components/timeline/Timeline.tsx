@@ -20,7 +20,7 @@ export const Timeline = () => {
     },
     {
       name: "Bluetrading",
-      descripcion: "One of the problem in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
+      descripcion: "One of the problem in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rigid rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
       icon: web,
       date: 'July 2023 - November 2023',
       link: 'https://bluetrading.vercel.app/',
@@ -30,7 +30,7 @@ export const Timeline = () => {
     
     {
       name: "Speed cube",
-      descripcion: "One of the problem in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
+      descripcion: "Since I love solving the Rubik's Cube as a hobby, I developed a web app to automatically calculate the average time after 5 solves (It's only available for PC).",
       icon: web,
       date: 'December 2022 - March 2023',
       link: 'https://speedcube-timer.vercel.app/',
@@ -40,7 +40,7 @@ export const Timeline = () => {
     
     {
       name: "Flash Typing",
-      descripcion: "One of the problem in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
+      descripcion: "Web app created to enhance my skills with the React framework. If you're curious about your words-per-minute typing speed, it's a fun game to enjoy in your free time (It's only available for PC).",
       icon: web,
       date: 'Octuber 2022 - November 2022',
       link: 'https://flashtyping.netlify.app/',
