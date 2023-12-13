@@ -67,7 +67,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
-                    className={"w-[85%] sm:w-[90%] mt-5 sm:mt-2 2xl:mt-10 h-[75px] flex justify-start items-center"}>
+                    className={"w-[85%] sm:w-[90%] mt-4 sm:mt-2 2xl:mt-10 h-[75px] flex justify-start items-center"}>
                     <h2 className={`text-[1.8rem] 2xl:text-[2.2rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto ${poppins500.className}`}>About</h2>
                   </motion.div>
 
@@ -75,7 +75,7 @@ export default function Presentation() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-3 sm:mt-4 2xl:mt-10"}>
+                    className={"w-[80%] sm:w-[85%] mt-2 sm:mt-4 2xl:mt-10"}>
                       Developer from Argentina, currently 19 years old and able to face any challenge 
                       in order to grow and increase my knowledge.
                   </motion.p>
