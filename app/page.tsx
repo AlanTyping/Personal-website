@@ -2,6 +2,7 @@ import Navbar from './navbar/navbar';
 import Presentation from './presentation/page';
 import KeepGoing from './keep-going/page';
 import Projects from './projects/projects';
+import Footer from './footer/Footer';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -16,6 +17,7 @@ export default function Home() {
       <Presentation />
       <KeepGoing />
       <Projects />
+      <Footer />
     </div> 
   )
 }
