@@ -64,7 +64,7 @@ export default function Presentation() {
               {secondAnimationState &&
                 <>
                   <motion.div
-                    initial={{ x: -100, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
                     className={"w-[85%] sm:w-[90%] mt-2 2xl:mt-10 h-[75px] flex justify-start items-center"}>
@@ -72,7 +72,7 @@ export default function Presentation() {
                   </motion.div>
 
                   <motion.p
-                    initial={{ x: -100, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
                     className={"w-[80%] sm:w-[85%] mt-2 sm:mt-6 2xl:mt-10"}>
@@ -80,7 +80,7 @@ export default function Presentation() {
                       in order to grow and increase my knowledge.
                   </motion.p>
                   <motion.p
-                    initial={{ x: -100, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
                     className={"w-[80%] sm:w-[85%] mt-4 2xl:mt-8 sm:pb-0"}>
