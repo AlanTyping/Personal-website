@@ -60,7 +60,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
         </div>
 
         <motion.div
-          initial={{ x: -100, opacity: 0 }} // Estado inicial fuera de la vista
+          initial={{ opacity: 0 }} // Estado inicial fuera de la vista
           animate={controls} // Animación controlada por Framer Motion
           transition={{ duration: 0.2, ease: 'easeOut' }}
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
