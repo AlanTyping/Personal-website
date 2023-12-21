@@ -41,11 +41,11 @@ export default function Presentation() {
       <div className="w-[100vw] h-[770px] md:h-[650px] 2xl:h-[950px] flex flex-col relative justify-end items-center">
 
         <div id="luna-svg-container" className="flex h-[160px] absolute top-[-8px]">
-          <Image id="luna-svg" className="h-[100px] 2xl:h-[120px] w-auto ml-10 2xl:ml-[-20px]" src={Luna} alt="luna-svg" />
+          <Image id="luna-svg" className="h-[100px] 2xl:h-[130px] w-auto ml-10 2xl:ml-[-20px]" src={Luna} alt="luna-svg" />
         </div>
 
         <div className="flex justify-center items-center">
-          <Image id="persona-svg" className="z-[1] h-[130px] 2xl:h-[170px] mb-[-1px] w-auto mr-[210px] 2xl:mr-[300px]" src={Persona} alt="persona-svg" />
+          <Image id="persona-svg" className="z-[1] h-[130px] 2xl:h-[160px] mb-[-1px] w-auto mr-[210px] 2xl:mr-[300px]" src={Persona} alt="persona-svg" />
         </div>
 
         <motion.div
@@ -60,7 +60,7 @@ export default function Presentation() {
 
           <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
-            <div className={secondAnimationState ? "relative text-[1rem] sm:text-[1.15rem] 2xl:text-[1.6rem] h-full w-full flex flex-col items-center justify-start text-white" : "hidden"}>
+            <div className={secondAnimationState ? "relative text-[1rem] sm:text-[1.15rem] 2xl:text-[1.55rem] h-full w-full flex flex-col items-center justify-start text-white" : "hidden"}>
               {secondAnimationState &&
                 <>
                   <motion.div
