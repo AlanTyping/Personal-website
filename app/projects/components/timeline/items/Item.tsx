@@ -10,8 +10,8 @@ type Props = {
   descripcion: string
   icon: StaticImageData
   date: string
-  link: string
-  image: StaticImageData
+  link?: string
+  image?: StaticImageData
   color: string
 }
 
@@ -65,7 +65,8 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
           transition={{ duration: 0.3, ease: 'easeOut' }}
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
           <div className={`bg-[#012979] overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] border-[#ffa500] ${visible ? 'bg-red-400' : ''}`}>
-            <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />
+            {image && <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />}
+            
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 2xl:mt-6 flex justify-start z-[1]'>
@@ -73,7 +74,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
             </div>
 
             <div className='w-full lg:hidden'>
-              <Image src={image} alt='' className='w-full h-auto rounded z-[1]' style={{ objectFit: 'contain' }} />
+              {image && <Image src={image} alt='' className='w-full h-auto rounded z-[1]' style={{ objectFit: 'contain' }} />}
             </div>
 
             <div className='h-full w-full p-2 2xl:p-4 z-[1]'>
@@ -84,7 +85,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.8rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
-                <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins500.className}`}>visit site</Link>
+               {link && <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins500.className}`}>visit site</Link>} 
               </div>
             </div>
           </div>

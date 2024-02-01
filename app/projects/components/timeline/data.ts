@@ -5,15 +5,22 @@ import flash from '../../assets/flash.png';
 import speed from '../../assets/speed.png';
 
 export const projects = [
-    {
-        name: "School web",
-        descripcion: "As I'm giving webpage services for schools, it's interesting to see a showcase project as a reference",
+     {
+        name: "Next one",
+        descripcion: "Let's build together the next one",
         icon: web,
-        date: 'November 2023 - December 2023',
-        link: 'https://school-showcase.vercel.app/',
-        image: school,
+        date: '??? - ???',
         color: 'bg-[#9b650086]'
     },
+    // {
+    //     name: "School web",
+    //     descripcion: "As I'm giving webpage services for schools, it's interesting to see a showcase project as a reference",
+    //     icon: web,
+    //     date: 'November 2023 - December 2023',
+    //     link: 'https://school-showcase.vercel.app/',
+    //     image: school,
+    //     color: 'bg-[#9b650086]'
+    // },
     {
         name: "Blueraising",
         descripcion: "One of the problems in trading is recording your progress, that often requires some excel knowledge and it isn't that cool to see your progress inside some rigid rectangles. This web app give you a nice layout to see your progress in a dinamic and graphic way",
