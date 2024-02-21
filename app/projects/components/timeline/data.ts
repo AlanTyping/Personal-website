@@ -7,7 +7,7 @@ import speed from '../../assets/speed.png';
 export const projects = [
      {
         name: "Next one",
-        descripcion: "Let's build together the next one",
+        descripcion: "Let's build it together",
         icon: web,
         date: '??? - ???',
         color: 'bg-[#9b650086]'
