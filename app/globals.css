@@ -8,6 +8,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --darkBlue: #00152b;
+  --blue: #001d3d;
+}
+
+.w {
+  width: 100%;
+}
+
+.h {
+  height: 100%;
+}
+
 /*mozilla*/
 
 * {
