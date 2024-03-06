@@ -17,8 +17,8 @@ export default function Home() {
       {/* <Navbar /> */}
       <Presentation />
       <KeepGoing />
-      <Projects />
       <SchoolSection />
+      <Projects />
       <Footer />
     </div> 
   )
