@@ -12,7 +12,7 @@ export default function SchoolSection() {
         que ya tiene, quizás te sientas interesado.
       </p>
       <div className='md:w-[60%] w-[80%] mt-4'>
-        <span>Para más info, consultar el siguiente pdf haciendo <a className='text-[var(--lightBlue)] border-b-[1px] border-[var(--lightBlue)]' href="" >click aquí</a></span>
+        <span>Para más info, consultar el siguiente pdf haciendo <a className='text-[var(--lighterBlue)] border-b-[1px] border-[var(--lighterBlue)]' href="./a.pdf" download>click aquí</a></span>
       </div>
     </div>
   )
