@@ -40,14 +40,13 @@ export const projects = [
         image: speed,
         color: 'bg-[#0099ff36]'
     },
-
-    // {
-    //     name: "Flash Typing",
-    //     descripcion: "Web app created to enhance my skills with the React framework. If you're curious about your words-per-minute typing speed, it's a fun game to enjoy in your free time (It's only available for PC).",
-    //     icon: web,
-    //     date: 'Octuber 2022 - November 2022',
-    //     link: 'https://flashtyping.netlify.app/',
-    //     image: flash,
-    //     color: 'bg-[#007ac03a]'
-    // },
+    {
+        name: "Flash Typing",
+        descripcion: "Web app created to enhance my skills with the React framework. If you're curious about your words-per-minute typing speed, it's a fun game to enjoy in your free time (It's only available for PC).",
+        icon: web,
+        date: 'Octuber 2022 - November 2022',
+        link: 'https://flashtyping.netlify.app/',
+        image: flash,
+        color: 'bg-[#007ac03a]'
+    },
 ]
