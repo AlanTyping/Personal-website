@@ -75,9 +75,9 @@ export default function Presentation() {
                     initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-2 sm:mt-6 2xl:mt-10"}>
-                      Developer from Argentina, currently 19 years old and able to face any challenge 
-                      in order to grow and increase my knowledge.
+                    className={"w-[80%] sm:w-[85%] mt-3 sm:mt-4 2xl:mt-12"}>
+                      Desarrollador de Argentina, actualmente 19 años y dispuesto a enfrentar cualquier reto
+                      a cambio de aumentar mis conocimietos y habilidades.
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -85,10 +85,10 @@ export default function Presentation() {
                     transition={{ duration: 0.3 }}
                     className={"w-[80%] sm:w-[85%] mt-4 2xl:mt-8 sm:pb-0"}>
 
-                    In pursuit of ways to improve the world and bring prosperity.
-                    I think that the only entity that persist over time is change, and that&apos;s pretty
-                    much the reason why I love doing what I do, because things can may never be perfect
-                    but they can always be improved
+                    En búsqueda de caminos para mejorar el mundo y traer prosperidad.
+                    Creo que la unica entidad que persiste en el tiempo es el cambio, y esa es la razón
+                    porqué me gusta lo que hago, porque las cosas quizás núnca sean perfectas,
+                    pero siempre pueden ser mejoradas
                   </motion.p>
                 </>
               }
