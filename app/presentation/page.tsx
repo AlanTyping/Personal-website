@@ -75,7 +75,7 @@ export default function Presentation() {
                     initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-3 sm:mt-3 2xl:mt-12"}>
+                    className={"w-[80%] sm:w-[85%] mt-2 sm:mt-3 2xl:mt-12"}>
                       Desarrollador de Argentina, actualmente 19 años y dispuesto a enfrentar cualquier reto
                       a cambio de aumentar mis conocimietos y habilidades.
                   </motion.p>
