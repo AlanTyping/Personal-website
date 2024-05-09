@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'AlanTyping',
-  description: 'Portfolio showcase',
+  description: 'Personal Website',
 }
 
 export default function RootLayout({
@@ -12,6 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/lion.svg" type="image/svg+xml" />
+      </head>
       <body>{children}</body>
     </html>
   )
