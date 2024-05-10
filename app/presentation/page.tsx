@@ -75,9 +75,9 @@ export default function Presentation() {
                     initial={{ opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className={"w-[80%] sm:w-[85%] mt-2 sm:mt-3 2xl:mt-12"}>
-                      Desarrollador de Argentina, actualmente 19 años y dispuesto a enfrentar cualquier reto
-                      a cambio de aumentar mis conocimietos y habilidades.
+                    className={"w-[80%] sm:w-[85%] mt-4 sm:mt-5 2xl:mt-12"}>
+                      Desarrollador Web de Argentina, dispuesto a enfrentar cualquier reto
+                      a cambio de aumentar conocimietos y habilidades.
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -88,7 +88,7 @@ export default function Presentation() {
                     En búsqueda de caminos para mejorar el mundo y traer prosperidad.
                     Creo que la unica entidad que persiste en el tiempo es el cambio, y esa es la razón
                     porqué me gusta lo que hago, porque las cosas quizás núnca sean perfectas,
-                    pero siempre pueden ser mejoradas
+                    pero siempre pueden ser mejoradas.
                   </motion.p>
                 </>
               }
