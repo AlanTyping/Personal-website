@@ -51,9 +51,9 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
       <div className="h-auto py-10 2xl:py-14 w-[98vw] lg:w-[90vw] flex flex-row justify-center items-center relative">
         <div className="h-full w-[10%] absolute left-0">
           <div className='w-full h-full relative flex-center flex-col items-center'>
-            <div className='h-full w-[3px] sm:w-[5px] 2xl:w-[7px] bg-[#0040c0]' />
+            <div className='h-full w-[3px] sm:w-[5px] 2xl:w-[7px] bg-[var(--lightBlue)]' />
 
-            <div className='p-[1px] 2xl:p-[2px] rounded-[100%] bg-[#0040c0] absolute top-0'>
+            <div className='p-[1px] 2xl:p-[2px] rounded-[100%] bg-[--lightBlue] absolute top-0'>
               <Image src={icon} alt='' className='w-[70px] max-w-[40px] sm:max-w-[50px] lg:max-w-[60px] 2xl:max-w-[100px] 2xl:w-[80px]' style={{ objectFit: 'contain' }} />
             </div>
           </div>
