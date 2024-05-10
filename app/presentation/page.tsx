@@ -9,7 +9,7 @@ import MobilePresentationLine from "./utilities/presentation-line-mobile.svg";
 import "./presentation.css";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { poppins500 } from "../utilities/fonts";
+import { poppins400 } from "../utilities/fonts";
 import { poppins800 } from "../utilities/fonts";
 
 export default function Presentation() {
@@ -68,7 +68,7 @@ export default function Presentation() {
                     animate={{ x: 0, scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
                     className={"w-[85%] sm:w-[90%] mt-2 2xl:mt-10 h-[75px] flex justify-start items-center"}>
-                    <h2 className={`text-[1.8rem] 2xl:text-[2.25rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto ${poppins500.className}`}>Sobre mí</h2>
+                    <h2 className={`text-[1.8rem] 2xl:text-[2.25rem] text-[#ffa500] border-b-[1px] border-[#ffa500] h-auto ${poppins400.className}`}>Sobre mí</h2>
                   </motion.div>
 
                   <motion.p
