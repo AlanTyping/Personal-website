@@ -58,7 +58,7 @@ export default function Presentation() {
 
           className="w-full flex flex-col items-center [--height-from:0px] [--height-to:475px] sm:[--height-to:400px] 2xl:[--height-to:700px]">
 
-          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[25px] border-b-[1px] border-t-[1px] border-[#ffa500]">
+          <div className="bg-[rgba(0,52,154,0.25)] h-full w-[85%] lg:w-[55%] rounded-[15px] border-b-[1px] border-t-[1px] border-[#ffa500]">
 
             <div className={secondAnimationState ? "relative text-[1rem] sm:text-[1.15rem] 2xl:text-[1.55rem] h-full w-full flex flex-col items-center justify-start text-white" : "hidden"}>
               {secondAnimationState &&

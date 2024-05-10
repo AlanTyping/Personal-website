@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
-import { poppins500 } from '../../../../utilities/fonts';
+import { poppins400 } from '../../../../utilities/fonts';
 import { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
@@ -70,7 +70,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 2xl:mt-6 flex justify-start z-[1]'>
-              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[3rem] ${poppins500.className}`}>{name}</h2>
+              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[3rem] ${poppins400.className}`}>{name}</h2>
             </div>
 
             <div className='w-full lg:hidden'>
@@ -85,7 +85,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.8rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
-               {link && <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins500.className}`}>Visitar Sitio</Link>} 
+               {link && <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
               </div>
             </div>
           </div>
