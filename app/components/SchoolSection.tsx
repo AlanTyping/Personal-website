@@ -8,7 +8,7 @@ export default function SchoolSection() {
       <p className='md:w-[60%] w-[80%]'>
         Especializandome en el desarrollo de páginas
         web para instituciones educativas 🏫, por lo que, si formas parte
-        de un colegio el cual necesita una página web, o actualizar la
+        de un colegio que necesita una página web o actualizar la
         que ya tiene, quizás te sientas interesado.
       </p>
       <div className='md:w-[60%] w-[80%] mt-4'>
