@@ -6,7 +6,7 @@ export default function SchoolSection() {
   return (
     <div className="py-16 2xl:py-20 text-[0.95rem] md:text-[1.1rem] 2xl:text-[1.5rem] flex-center flex-col justify-center w bg-[var(--darkBlue)] border-t-[1px] border-[#ffa500] text-white">
       <p className='md:w-[60%] w-[80%]'>
-        Especializandome en el desarrollo de páginas
+        Desarrollo de páginas
         web para instituciones educativas 🏫, por lo que, si formas parte
         de un colegio que necesita una página web o actualizar la
         que ya tiene, quizás te sientas interesado.
