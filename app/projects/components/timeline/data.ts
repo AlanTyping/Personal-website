@@ -5,15 +5,15 @@ import flash from '../../assets/flash.png';
 import speed from '../../assets/speed.png';
 
 export const projects = [
-    //  {
-    //     name: "Next one",
-    //     descripcion: "Let's build it together",
-    //     icon: web,
-    //     date: '??? - ???',
-    //     color: 'bg-[#9b650086]'
-    // },
     {
-        name: "Web escolar",
+        name: "Edu App",
+        descripcion: "Creo que uno de los fundamentos para la prosperidad es la libertad. Es en eso mismo en lo que falla el sistema educativo actual, y si bien no puedo solucionar el problema de raíz mediante una app, creo que puedo ofrecer una solución para mejorar la conexión entre alumnos y profesores, con el objetivo de personalizar la educación y hacerla más interesante.",
+        icon: web,
+        date: 'Junio 2024 - ???',
+        color: 'bg-[#4e0000]'
+    },
+    {
+        name: "Web Escolar",
         descripcion: "Como estoy dando servicios de desarrollo web para escuelas, es interesante ver una muestra como referencia base.",
         icon: web,
         date: 'Noviembre 2023 - Diciembre 2023',
@@ -42,7 +42,7 @@ export const projects = [
     },
     {
         name: "Flash Typing",
-        descripcion: "Web app creada para mejorar mis skills con el framework React.js. Si tenes curiosidad sobre tus palabras/minuto en el teclado, este es un test que te puede hacer pasar un buen tiempo (Sólo para pc).",
+        descripcion: "Web app desarrollada para mejorar mis skills con el framework React.js. Si tenes curiosidad sobre tus palabras/minuto en el teclado, este es un test que te puede hacer pasar un buen tiempo (Sólo para pc).",
         icon: web,
         date: 'Octubre 2022 - Noviembre 2022',
         link: 'https://flashtyping.netlify.app/',
