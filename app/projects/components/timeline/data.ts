@@ -20,7 +20,7 @@ export const projects = [
         link: 'https://school-showcase.vercel.app/',
         image: school,
         color: 'bg-[#9b650086]',
-        mobileColor: 'bg-[#ffa60085]'
+        mobileColor: 'bg-[#ffa600b5]'
     },
     {
         name: "Blue Trading",
