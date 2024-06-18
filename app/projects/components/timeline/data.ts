@@ -19,7 +19,8 @@ export const projects = [
         date: 'Noviembre 2023 - Diciembre 2023',
         link: 'https://school-showcase.vercel.app/',
         image: school,
-        color: 'bg-[#9b650086]'
+        color: 'bg-[#9b650086]',
+        mobileColor: 'bg-[#ffa60085]'
     },
     {
         name: "Blue Trading",
