@@ -64,7 +64,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color }: Prop
           animate={controls} // Animación controlada por Framer Motion
           transition={{ duration: 0.3, ease: 'easeOut' }}
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
-          <div className={`bg-[#012979] overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] border-[#ffa500] ${visible ? 'bg-red-400' : ''}`}>
+          <div className={` ${color} overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] border-[#ffa500] ${visible ? 'bg-red-400' : ''}`}>
             {image && <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />}
             
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
