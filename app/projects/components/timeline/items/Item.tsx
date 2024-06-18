@@ -71,7 +71,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 2xl:mt-6 flex justify-start z-[1]'>
-              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[3rem] ${poppins400.className}`}>{name}</h2>
+              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[3rem] ${name === 'Web Escolar' && `border-b-[3px] border-b-[#ffa500]`} ${poppins400.className}`}>{name}</h2>
             </div>
 
             <div className='w-full lg:hidden'>
