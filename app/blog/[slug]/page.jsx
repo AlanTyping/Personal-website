@@ -1,14 +1,12 @@
-import Image from "next/image";
-import Head from "next/head";
 
 import Link from "next/link";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
-import { getPostFromSlug, getSlugs, PostMeta, getAllPosts } from "../../blog/api";
-import YouTube from "../../blog/components/Youtube";
+import { getPostFromSlug, getAllPosts } from "../../blog/api";
 import "highlight.js/styles/atom-one-dark.css";
 import Markdown from 'markdown-to-jsx';
+
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -23,37 +21,14 @@ export default function PostPage({ params }) {
   const post = getPostFromSlug(slug);
 
   return (
-    <>
-    <Link href='/'>Go back home</Link>
+    <div className='bg-[#061333] p-5'>
+      <Link href='/'>Go back home</Link>
       <h1>{post.meta.title}</h1>
       <h1>{post.meta.date}</h1>
-      <br/>
-      <Markdown>{post.content}</Markdown>
-      {/* <MDXRemote {...post.source} components={{ YouTube, Image }} /> */}
-    </>
+      <br />
+      <article class="prose lg:prose-xl prose-sky text-white m-auto prose-h2:text-[#ffa500]">
+        <Markdown>{post.content}</Markdown>
+      </article>
+    </div>
   );
 }
-
-// export const getStaticProps = async () => {
-//   const { content, meta } = getPostFromSlug(slug);
-//   const mdxSource = await serialize(content, {
-//     mdxOptions: {
-//       rehypePlugins: [
-//         rehypeSlug,
-//         [rehypeAutolinkHeadings, { behavior: "wrap" }],
-//         rehypeHighlight,
-//       ],
-//     },
-//   });
-
-//   return { props: { post: { source: mdxSource, meta } } };
-// };
-
-// export const getStaticPaths = async () => {
-//   const paths = getSlugs().map((slug) => ({ params: { slug } }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };

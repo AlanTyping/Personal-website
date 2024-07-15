@@ -32,6 +32,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
     "@types/react-vertical-timeline-component": "^3.3.6"
   }
 }
