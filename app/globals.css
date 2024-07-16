@@ -9,10 +9,15 @@
 }
 
 :root {
+  --secondary: #ffa500;
   --darkBlue: #00152b;
   --blue: #001947;
   --lightBlue: #0039aa;
   --lighterBlue: #276fff;
+}
+
+body {
+  background-color:#061333;
 }
 
 .w {

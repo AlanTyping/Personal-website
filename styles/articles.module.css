@@ -9,11 +9,7 @@
 }
 
 .title {
-  font-size: 1.25rem;
-}
-
-.tags {
-  font-size: 0.75rem;
+  line-height: 30px;
 }
 
 .tags a:after {

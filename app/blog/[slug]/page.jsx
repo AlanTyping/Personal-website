@@ -2,6 +2,7 @@
 import Link from "next/link";
 // import { processMarkdown } from "../../../lib/markdownProcessor";
 import { getPostFromSlug, getAllPosts } from "../../blog/api";
+import { formatearFecha } from "../utils/utils";
 // import "highlight.js/styles/atom-one-dark.css";
 import Markdown from 'markdown-to-jsx';
 // import rehypeHighlight from "rehype-highlight";
@@ -27,7 +28,7 @@ export default async function PostPage({ params }) {
     <div className='bg-[#061333] p-5'>
       <Link href='/'>Go back home</Link>
       <h1>{post.meta.title}</h1>
-      <h1>{post.meta.date}</h1>
+      <h1>{formatearFecha(post.meta.date)}</h1>
       <br />
       <article class="prose lg:prose-xl prose-sky text-white m-auto prose-h2:text-[#ffa500]">
         <Markdown>{post.content}</Markdown>

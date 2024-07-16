@@ -1,24 +1,9 @@
-import Link from "next/link";
-import styles from "../../../styles/articles.module.css";
+import ArticlePreview from "./ArticlePreview";
 
 export default function Articles({ posts }) {
   return (
-    <ul className={styles.list}>
-      {posts.map((post) => (
-        <li key={post.slug}>
-          <div className={styles.title}>
-            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-          </div>
-          <p>{post.excerpt}</p>
-          <p className={styles.tags}>
-            {post.tags.map((tag) => (
-              <Link key={tag} href={`/tags/${tag}`}>
-                {tag}
-              </Link>
-            ))}
-          </p>
-        </li>
-      ))}
+    <ul className="flex items-center gap-6 flex-col w md:w-[45%] m-auto p-3">
+      {posts.map((post, i) => (<ArticlePreview post={post} i={i} index={post.slug} />))}
     </ul>
   );
 }
