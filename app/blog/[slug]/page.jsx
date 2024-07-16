@@ -1,11 +1,14 @@
 
 import Link from "next/link";
-import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeHighlight from "rehype-highlight";
+// import { processMarkdown } from "../../../lib/markdownProcessor";
 import { getPostFromSlug, getAllPosts } from "../../blog/api";
-import "highlight.js/styles/atom-one-dark.css";
+// import "highlight.js/styles/atom-one-dark.css";
 import Markdown from 'markdown-to-jsx';
+// import rehypeHighlight from "rehype-highlight";
+// import remarkParse from 'remark-parse';
+// import rehypeStringify from 'rehype-stringify';
+// import rehypeSlug from 'rehype-slug';
+// import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 
 export async function generateStaticParams() {
@@ -16,7 +19,7 @@ export async function generateStaticParams() {
   }));
 };
 
-export default function PostPage({ params }) {
+export default async function PostPage({ params }) {
   const slug = params.slug
   const post = getPostFromSlug(slug);
 
