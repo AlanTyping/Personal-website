@@ -29,7 +29,7 @@ export default async function Blog() {
         <h2 className="text-[1.5rem] text-center">Chech out my Articles</h2>
       </div>
       <div className="w m-auto flex items-center justify-center">
-        <button className="font-normal text-[1.3rem] text-[#D8D8D8] bg-[#081942] p-2 px-12">
+        <button className="font-normal text-[1.3rem] text-[#D8D8D8] bg-[#081942] p-2 px-16 mr-40">
           Filtrar
         </button>
       </div>
