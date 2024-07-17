@@ -33,9 +33,9 @@ export default async function Blog() {
           Filtrar
         </button>
       </div>
-      <div className="w-[130vw] h-[750px] max-w-[570px] relative">
+      <div className="w-[130vw] h-[700px] max-w-[570px] relative">
         <Image src={BookPhone} fill={true} alt="book phone" />
-        <div className="h w-[65%] ml-16 gap-2 flex justify-center items-center flex-col">
+        <div className="h w-[65%] ml-20 gap-2 flex justify-center items-center flex-col">
           <Articles posts={posts} />
         </div>
       </div>
