@@ -30,7 +30,7 @@ export default async function Blog() {
         <h2 className="text-[1.5rem] text-center text-[#b3b3b3]">Articles</h2>
       </div>
       <div className="w m-auto flex items-center justify-center">
-        <button className="font-normal text-[1.3rem] text-[#b7b7b7] bg-[#081942] py-3 px-16 mr-40 lg:mb-[-10px]">
+        <button className="font-normal text-[1.3rem] text-[#b7b7b7] bg-[#05112d] py-3 px-16 mr-40 lg:mb-[-10px]">
           Filtrar
         </button>
       </div>
