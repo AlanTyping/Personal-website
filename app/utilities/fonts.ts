@@ -1,4 +1,9 @@
-import { Poppins } from 'next/font/google';
+import { Poppins, Prata } from 'next/font/google';
+
+export const prata = Prata({
+    weight: "400",
+    subsets: ["latin"]
+});
 
 export const poppins400 = Poppins({
     weight: "400",
