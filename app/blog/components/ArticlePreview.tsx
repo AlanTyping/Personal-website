@@ -34,7 +34,7 @@ export default function ArticlePreview({ post, i }: Props) {
       <div className="w">
         <h2 className="text-[#D8D8D8] text-[1.7rem] leading-tight">{post.title}</h2>
       </div>
-      <div className="w min-h-[100px] max-h-[200px] overflow-hidden overflow-y-scroll">
+      <div className="w">
         <h2 className="text-[#B7B7B7] text-[1.15rem]">{post.excerpt}</h2>
       </div>
       <div className="w p-2 overflow-hidden overflow-x-scroll min-h-[35px]">
@@ -49,7 +49,7 @@ export default function ArticlePreview({ post, i }: Props) {
       </div>
 
       <div id="blog-preview-read-more" className="w py-8 sticky bottom-0 bg-[rgba(0,0,0,0.73)] ">
-          <span className="text-[1.4rem] underline font-semibold">Read more</span>
+          <span className="text-[1.3rem] underline font-semibold text-[#D8D8D8]">Read more</span>
       </div>
     </li>
   )
