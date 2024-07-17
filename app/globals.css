@@ -8,6 +8,28 @@
   box-sizing: border-box;
 }
 
+/*mozilla*/
+
+* {
+  scrollbar-color: #5b73ac #003099; /* color del pulgar, color de la pista */
+  scrollbar-width: thin; /* grosor de la barra de desplazamiento: auto, thin, none */
+}
+
+/*Chrome body*/
+
+body::-webkit-scrollbar {
+  background-color: #062872;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4f6bac;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #687ca9;
+}
+
 :root {
   --secondary: #ffa500;
   --darkBlue: #00152b;
