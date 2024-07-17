@@ -71,7 +71,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 2xl:mt-6 flex justify-start z-[1]'>
-              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[3rem] ${name === 'Web Escolar' && `border-b-[3px] border-b-[#ffa500]`} ${poppins400.className}`}>{name}</h2>
+              <h2 className={`text-[1.4rem] sm:text-[1.8rem] lg:text-[2rem] 2xl:text-[2.5rem] ${name === 'Web Escolar' && `border-b-[3px] border-b-[#ffa500]`} ${poppins400.className}`}>{name}</h2>
             </div>
 
             <div className='w-full lg:hidden'>
@@ -79,11 +79,13 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
             </div>
 
             <div className='h-full w-full p-2 2xl:p-4 z-[1]'>
+
               <div className='w-full mt-2 flex justify-start'>
                 <span className='text-[0.9rem] sm:text-[1.1rem] lg:text-[1.1rem] 2xl:text-[1.5rem] text-[#b4b4b4]'>{date}</span>
               </div>
+
               <div className='w-full mt-4 flex justify-start px-1'>
-                <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.8rem] text-[#e0e0e0]'>{descripcion}</p>
+                <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.5rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
                {link && <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
