@@ -27,7 +27,7 @@ export default function ArticlePreview({ post, i }: Props) {
 
     //   <p className="text-[1.2rem] mb-5 text-[#ddd]">{post.excerpt}</p>
     // </li>
-    <li className={`h-[270px] relative overflow-hidden overflow-y-scroll w pt-6 ${i > 0 && 'border-t border-[#838383]'} z-10 gap-3 flex flex-col ${prata.className} `}>
+    <li className={`h-[270px] lg:h-[320px] relative overflow-hidden w pt-6 lg:pt-10 ${i > 0 && 'border-t border-[#838383]'} z-10 gap-3 flex flex-col ${prata.className} `}>
       <div className="w">
         <p className="text-[#B7B7B7] text-[1rem]">{formatearFecha(post.date)}</p>
       </div>
@@ -37,7 +37,7 @@ export default function ArticlePreview({ post, i }: Props) {
       <div className="w">
         <h2 className="text-[#B7B7B7] text-[1.15rem]">{post.excerpt}</h2>
       </div>
-      <div className="w p-2 overflow-hidden overflow-x-scroll min-h-[35px]">
+      <div className="w p-2 overflow-hidden min-h-[35px]">
         <ul className="flex gap-2">
           {post.tags.map((tag: string) => (
             <li key={tag} className="text-[0.9rem] text-[#B7B7B7] gap-1 flex flex-row w-auto">
