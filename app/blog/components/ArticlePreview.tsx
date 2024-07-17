@@ -49,7 +49,7 @@ export default function ArticlePreview({ post, i }: Props) {
       </div>
 
       <div id="blog-preview-read-more" className="w py-8 sticky bottom-0 bg-[rgba(0,0,0,0.73)] ">
-          <span className="text-[1.3rem] underline font-semibold text-[#D8D8D8]">Read more</span>
+          <span className="text-[1.2rem] underline font-semibold text-[#D8D8D8]">Read more</span>
       </div>
     </li>
   )

@@ -16,7 +16,7 @@ export default async function Blog() {
   const posts = await getPosts();
 
   return (
-    <div className={`text-white bg-[#040D23] border-y border-[var(--secondary)] ${prata.className}`}>
+    <div className={`text-white bg-[#040D23] pb-16 border-y border-[var(--secondary)] ${prata.className} w flex items-center flex-col justify-center`}>
       {/* <div className="w text-start">
         <Link href="/">
         <h1 className="text-[1.2rem] font-bold">Back home</h1>
@@ -33,9 +33,9 @@ export default async function Blog() {
           Filtrar
         </button>
       </div>
-      <div className="w-[130vw] h-[680px] max-w-[570px] relative">
+      <div className="w-[130vw] max-w-[540px] h-[700px] relative flex items-center justify-center">
         <Image src={BookPhone} fill={true} alt="book phone" />
-        <div className="h w-[65%] ml-20 gap-2 flex justify-center items-center flex-col">
+        <div className="h w-[65%] gap-2 flex justify-center items-center flex-col">
           <Articles posts={posts} />
         </div>
       </div>
