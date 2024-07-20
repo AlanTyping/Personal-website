@@ -1,18 +1,17 @@
 import Header from "../components/header/Header";
 import Image from "next/image";
-import { poppins400, poppins600, poppins800 } from "../utilities/fonts";
+import { poppins400, poppins500, poppins600, poppins700, poppins800 } from "../utilities/fonts";
 import force from './utilities/force.svg';
 
 export default function Presentation() {
   return (
-    <section className={`h-auto w`}>
-      <Header />
-
-      <div className="relative h-[407px]">
-        <div className="w">
-
-        </div>
+    <section className={`py-10 w overflow-hidden flex flex-col items-center`}>
+      <div className="relative h-[607px] w mt-[-100px]">
         <Image fill={true} src={force} alt="force" />
+      </div>
+      <div className="w-[90%] text-[#DFDFDF] flex flex-col mt-[-200px]">
+        <h2 className={`${poppins500.className} text-[3rem] z-10 mb-[-30px]`}>Be</h2>
+        <h1 className={`${poppins700.className} text-[5rem] z-10`}>Creative</h1>
       </div>
     </section>
   )
