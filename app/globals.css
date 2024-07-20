@@ -31,7 +31,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 :root {
-  --secondary: #ffa500;
+  --primary: #040D23;
+  --secondary: #031741;
+  --tertiary: #3278FF;
   --darkBlue: #00152b;
   --blue: #001947;
   --lightBlue: #0039aa;
@@ -74,4 +76,5 @@ body::-webkit-scrollbar-thumb:hover {
 .flex-center {
   display: flex;
   align-items: center;
+  justify-content: center;
 }

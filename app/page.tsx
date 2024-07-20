@@ -14,10 +14,10 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <div className={`flex-center h-auto flex-col w-full bg-blue-600 overflow-hidden z-[-3] ${poppins.className}`}>
+    <div className={`flex-center h-auto flex-col w-full bg-[var(--primary)] overflow-hidden z-[-3] ${poppins.className}`}>
       {/* <Navbar /> */}
       <Presentation />
-      <KeepGoing />
+      {/* <KeepGoing /> */}
       <Blog />
       <SchoolSection />
       <Projects />
