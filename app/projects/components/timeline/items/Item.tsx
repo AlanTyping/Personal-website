@@ -65,7 +65,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
           animate={controls} // Animación controlada por Framer Motion
           transition={{ duration: 0.3, ease: 'easeOut' }}
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
-          <div className={`${mobileColor ? mobileColor : color} overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] ${name === 'Web Escolar' ? `border-b-[#ffa500]` : 'border-[var(--tertiary)]'} ${visible ? 'bg-red-400' : ''}`}>
+          <div className={`bg-[var(--secondary)] overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] ${name === 'Web Escolar' ? `border-b-[#ffa500]` : 'border-[var(--tertiary)]'} ${visible ? 'bg-red-400' : ''}`}>
             {image && <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />}
             
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
@@ -88,7 +88,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.5rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
-               {link && <Link href={link} target='blank' className={`p-2 bg-[#001d3d] lg:bg-[#0040c0] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
+               {link && <Link href={link} target='blank' className={`p-2 border border-[var(--tertiary)] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
               </div>
             </div>
           </div>
