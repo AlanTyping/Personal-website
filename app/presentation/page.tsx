@@ -6,18 +6,18 @@ import line from './utilities/line.svg';
 
 export default function Presentation() {
   return (
-    <section className={`py-10 lg:py-[0px] w overflow-hidden flex flex-col lg:flex-col-reverse items-center lg:h-[750px]`}>
-      <div className="relative h-[607px] w lg:h-[910px] lg:ml-24 mt-[-100px] lg:mt-[-320px] ">
+    <section className={`py-10 lg:py-[0px] w overflow-hidden flex flex-col lg:flex-col-reverse items-center lg:h-[750px] 2xl:h-[1000px]`}>
+      <div className="relative h-[607px] w lg:h-[910px] lg:ml-24 mt-[-100px] lg:mt-[-320px] 2xl:mt-[-450px] 2xl:h-[2200px]">
         <Image fill={true} src={force} alt="force" />
       </div>
       <div className="hidden lg:flex w relative">
-        <div className="absolute top-0 ml-24 h-[400px] w-[430px] z-20">
+        <div className="absolute top-0 ml-24 2xl:ml-48 2xl:h-[600px] h-[400px] w-[430px] 2xl:w-[500px] z-20">
           <Image src={line} alt="line" fill={true} />
         </div>
       </div>
-      <div className="w-[90%] lg:px-[27px] lg:w-[90%] text-[var(--text)] flex flex-col mt-[-200px] lg:mt-[70px] lg:ml-24">
-        <h2 className={`${poppins500.className} text-[2.5rem] lg:text-[3.2rem] z-10 mb-[-30px] uppercase`}>Be</h2>
-        <h1 className={`${poppins700.className} text-[4rem] lg:text-[4.8rem] z-10 uppercase`}>Creative</h1>
+      <div className="w-[90%] lg:px-[27px] lg:w-[90%] text-[var(--text)] flex flex-col mt-[-200px] lg:mt-[70px] 2xl:mt-[140px] lg:ml-24 2xl:ml-40">
+        <h2 className={`${poppins500.className} text-[2.5rem] lg:text-[3.2rem] 2xl:text-[3.5rem] z-10 mb-[-30px] uppercase`}>Be</h2>
+        <h1 className={`${poppins700.className} text-[4rem] lg:text-[4.8rem] 2xl:text-[6.5rem] z-10 uppercase`}>Creative</h1>
       </div>
     </section>
   )

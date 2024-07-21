@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function SchoolSection() {
   return (
-    <div className="py-16 2xl:py-20 text-[0.95rem] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center flex-col justify-center w bg-[var(--secondary)] border-t-[1px] border-[var(--tertiary)] text-white">
+    <div className="py-16 2xl:py-20 text-[0.95rem] z-40 lg:mt-[-120px] xl:mt-[-16px] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center flex-col justify-center w bg-[var(--secondary)] border-t-[1px] border-[var(--tertiary)] text-white">
       <p className='md:w-[60%] w-[80%]'>
         Desarrollo de páginas
         web para instituciones educativas 🏫, por lo que, si formas parte

@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
       <Presentation />
       <KeepGoing />
-      <Blog />
+      {/* <Blog /> */}
       <SchoolSection />
       <Projects />
       <Footer />
