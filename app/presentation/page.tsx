@@ -2,16 +2,22 @@ import Header from "../components/header/Header";
 import Image from "next/image";
 import { poppins400, poppins500, poppins600, poppins700, poppins800 } from "../utilities/fonts";
 import force from './utilities/force.svg';
+import line from './utilities/line.svg';
 
 export default function Presentation() {
   return (
-    <section className={`py-10 w overflow-hidden flex flex-col items-center`}>
-      <div className="relative h-[607px] w mt-[-100px]">
+    <section className={`py-10 lg:py-[0px] w overflow-hidden flex flex-col lg:flex-col-reverse items-center lg:h-[750px]`}>
+      <div className="relative h-[607px] w lg:h-[910px] lg:ml-24 mt-[-100px] lg:mt-[-320px] ">
         <Image fill={true} src={force} alt="force" />
       </div>
-      <div className="w-[90%] text-[#DFDFDF] flex flex-col mt-[-200px]">
-        <h2 className={`${poppins500.className} text-[3rem] z-10 mb-[-30px]`}>Be</h2>
-        <h1 className={`${poppins700.className} text-[5rem] z-10`}>Creative</h1>
+      <div className="hidden lg:flex w relative">
+        <div className="absolute top-0 ml-24 h-[400px] w-[430px] z-20">
+          <Image src={line} alt="line" fill={true} />
+        </div>
+      </div>
+      <div className="w-[90%] lg:px-[27px] lg:w-[90%] text-[#DFDFDF] flex flex-col mt-[-200px] lg:mt-[70px] lg:ml-24">
+        <h2 className={`${poppins500.className} text-[2.5rem] lg:text-[3.2rem] z-10 mb-[-30px] uppercase`}>Be</h2>
+        <h1 className={`${poppins700.className} text-[4rem] lg:text-[4.8rem] z-10 uppercase`}>Creative</h1>
       </div>
     </section>
   )

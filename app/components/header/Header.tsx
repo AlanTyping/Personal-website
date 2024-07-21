@@ -15,7 +15,7 @@ export default function Header() {
         </div>
         <Link href='#' className="hidden lg:flex">blog</Link>
         <Link href='#' className="hidden lg:flex">projectos</Link>
-        <Link href='mailto:alantyping.dev@gmail.com' className="h-[44px] sm:h-[60px] lg:h-[50px] 2xl:h-[65px] w-[135px] sm:w-[246px] lg:w-[200px] 2xl:w-[266px] border border-[var(--tertiary)] lg:bg-[var(--terciary)] rounded-[3px] flex-center lg:hover:bg-[var(--tertiary)] transition">contacto</Link>
+        <Link href='mailto:alantyping.dev@gmail.com' className="h-[44px] sm:h-[60px] lg:h-[50px] 2xl:h-[65px] w-[135px] sm:w-[246px] lg:w-[180px] 2xl:w-[266px] border border-[var(--tertiary)] lg:bg-[var(--terciary)] rounded-[3px] flex-center lg:hover:bg-[var(--tertiary)] transition">contacto</Link>
       </nav>
     </header>
   )
