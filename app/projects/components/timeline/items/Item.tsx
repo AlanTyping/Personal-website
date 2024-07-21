@@ -52,9 +52,9 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
       <div className="h-auto py-10 2xl:py-14 w-[98vw] lg:w-[90vw] flex flex-row justify-center items-center relative">
         <div className="h-full w-[10%] absolute left-0">
           <div className='w-full h-full relative flex-center flex-col items-center'>
-            <div className='h-full w-[3px] sm:w-[5px] 2xl:w-[7px] bg-[var(--lightBlue)]' />
+            <div className='h-full w-[3px] sm:w-[5px] 2xl:w-[7px] bg-[var(--secondary)]' />
 
-            <div className='p-[1px] 2xl:p-[2px] rounded-[100%] bg-[--lightBlue] absolute top-0'>
+            <div className='p-[1px] 2xl:p-[2px] rounded-[100%] bg-[var(--secondary)] absolute top-0'>
               <Image src={icon} alt='' className='w-[70px] max-w-[40px] sm:max-w-[50px] lg:max-w-[60px] 2xl:max-w-[100px] 2xl:w-[80px]' style={{ objectFit: 'contain' }} />
             </div>
           </div>
@@ -65,7 +65,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
           animate={controls} // Animación controlada por Framer Motion
           transition={{ duration: 0.3, ease: 'easeOut' }}
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
-          <div className={`${mobileColor ? mobileColor : color} overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] border-[#ffa500] ${visible ? 'bg-red-400' : ''}`}>
+          <div className={`${mobileColor ? mobileColor : color} overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] ${name === 'Web Escolar' ? `border-b-[#ffa500]` : 'border-[var(--tertiary)]'} ${visible ? 'bg-red-400' : ''}`}>
             {image && <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />}
             
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
