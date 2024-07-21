@@ -15,7 +15,7 @@ export default function Presentation() {
           <Image src={line} alt="line" fill={true} />
         </div>
       </div>
-      <div className="w-[90%] lg:px-[27px] lg:w-[90%] text-[#DFDFDF] flex flex-col mt-[-200px] lg:mt-[70px] lg:ml-24">
+      <div className="w-[90%] lg:px-[27px] lg:w-[90%] text-[var(--text)] flex flex-col mt-[-200px] lg:mt-[70px] lg:ml-24">
         <h2 className={`${poppins500.className} text-[2.5rem] lg:text-[3.2rem] z-10 mb-[-30px] uppercase`}>Be</h2>
         <h1 className={`${poppins700.className} text-[4rem] lg:text-[4.8rem] z-10 uppercase`}>Creative</h1>
       </div>
