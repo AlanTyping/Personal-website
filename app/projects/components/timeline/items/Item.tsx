@@ -88,7 +88,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.5rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
-               {link && <Link href={link} target='blank' className={`p-2 border border-[var(--tertiary)] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
+               {link && <Link href={link} target='blank' className={`p-2 border border-[var(--text)] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
               </div>
             </div>
           </div>
