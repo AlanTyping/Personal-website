@@ -17,7 +17,7 @@ export default async function Blog() {
   const posts = await getPosts();
 
   return (
-    <div className={`text-white bg-[#040D23] pb-16 border-y border-[var(--secondary)] ${prata.className} w flex items-center flex-col justify-center`}>
+    <div className={`text-white bg-[#040D23] pb-16 ${prata.className} w flex items-center flex-col justify-center`}>
       {/* <div className="w text-start">
         <Link href="/">
         <h1 className="text-[1.2rem] font-bold">Back home</h1>

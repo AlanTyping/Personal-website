@@ -19,8 +19,6 @@ const config: Config = {
       },
       slideInFromRight: {
         '0%': { transform: 'translate(100%, 100%)' },
-        '1%': { opacity: '0' },
-        '99%': { opacity: '1'},
         '100%': { transform: 'translate(0, 0)' },
       },
       fadeIn: {
