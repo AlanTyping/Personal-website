@@ -20,8 +20,8 @@ export default function Home() {
       <Header />
       <Presentation />
       <KeepGoing />
-      {/* <Blog /> */}
       <SchoolSection />
+      <Blog />
       <Projects />
       <Footer />
     </div> 
