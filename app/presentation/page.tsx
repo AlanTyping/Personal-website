@@ -7,7 +7,7 @@ import line from './utilities/line.svg';
 export default function Presentation() {
   return (
     <section className={`py-10 lg:py-[0px] w overflow-hidden flex flex-col lg:flex-col-reverse items-center lg:h-[750px] 2xl:h-[1000px]`}>
-      <div className="relative animate-bounce h-[607px] w lg:h-[910px] lg:ml-24 mt-[-100px] lg:mt-[-320px] 2xl:mt-[-450px] 2xl:h-[2200px]">
+      <div className="relative animate-right h-[607px] w lg:h-[910px] lg:ml-24 mt-[-100px] lg:mt-[-320px] 2xl:mt-[-450px] 2xl:h-[2200px]">
         <Image fill={true} src={force} alt="force" />
       </div>
       <div className="hidden lg:flex w relative">

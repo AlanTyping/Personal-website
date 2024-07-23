@@ -8,6 +8,27 @@
     }
 }
 
+@keyframes combinedAnimation {
+    0% {
+        transform: translate(-100%, -100%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.combined-animation {
+    animation: combinedAnimation 2s infinite;
+}
+
 ::selection {
     /* Cambia este valor al color que desees */
     color: orange;
