@@ -45,6 +45,12 @@ body {
   background-color:#061333;
 }
 
+::selection {
+  /* Cambia este valor al color que desees */
+  color: #ffa500;
+  /* Cambia este valor al color del texto deseado */
+}
+
 .w {
   width: 100%;
 }

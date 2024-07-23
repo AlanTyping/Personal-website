@@ -8,11 +8,6 @@
     }
 }
 
-::selection {
-    /* Cambia este valor al color que desees */
-    color: orange;
-    /* Cambia este valor al color del texto deseado */
-}
 
 #second-animation-on {
     display: flex;
