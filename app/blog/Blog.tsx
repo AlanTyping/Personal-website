@@ -17,7 +17,7 @@ export default async function Blog() {
   const posts = await getPosts();
 
   return (
-    <div className={`py-10 text-white bg-[#040D23] pb-16 ${prata.className} w flex items-center flex-col justify-center`}>
+    <div className={`px-[27px] py-10 text-white bg-[#040D23] pb-16 ${prata.className} w flex items-center flex-col justify-center`}>
       {/* <div className="w text-start">
         <Link href="/">
         <h1 className="text-[1.2rem] font-bold">Back home</h1>
@@ -26,14 +26,14 @@ export default async function Blog() {
       <div className="w-[60%] m-auto">
         <h1 className="font-bold text-[1.5rem] text-[var(--lightBlue)]">Articles</h1>
       </div>  */}
-      <div className="w-[90%] flex lg:w-[1000px] pb-12">
-        <h2 className={`text-[2rem] text-[var(--text)] ${poppins700.className}`}>Blog</h2>
+      <div className="w flex lg:w-[1000px] pb-12">
+        <h2 className={`text-[2.5rem] text-[var(--secondaryText)] ${poppins700.className}`}>Blog</h2>
       </div>
-      <div className="w m-auto flex items-center justify-center">
+      {/* <div className="w m-auto flex items-center justify-center">
         <button className="font-normal text-[1.3rem] text-[var(--text)] bg-[#05112d] py-3 px-16 mr-40 lg:mb-[-10px]">
           Filtrar
         </button>
-      </div>
+      </div> */}
       <div className="w-[130vw] max-w-[540px] lg:max-w-[1000px] h-[700px] lg:h-[1100px] relative flex items-center justify-center">
         <Image className="lg:hidden" src={BookPhone} fill={true} alt="book phone" />
         <Image className="hidden lg:flex" src={BookPc} fill={true} alt="book phone" />
