@@ -39,7 +39,7 @@ export default function SchoolSection() {
       animate={controls} // Animación controlada por Framer Motion
       transition={{ duration: 1, ease: 'backOut', delay: 0.15 }}
       ref={animatedElementRef}
-      className="overflow-hidden px-[27px] 2xl:py-20 text-[0.95rem] z-40 lg:mt-[-120px] xl:mt-[-16px] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
+      className="overflow-hidden px-[27px] text-[0.95rem] z-40 lg:mt-[-120px] xl:mt-[-16px] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
       <motion.p
         className='md:w-[60%] w'>
         Desarrollo de páginas
