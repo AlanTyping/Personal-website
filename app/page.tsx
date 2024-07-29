@@ -21,7 +21,7 @@ export default function Home() {
       <Presentation />
       <KeepGoing />
       <SchoolSection />
-      <Blog />
+      {/* <Blog /> */}
       <Projects />
       <Footer />
     </div> 
