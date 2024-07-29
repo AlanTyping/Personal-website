@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { poppins400, poppins600 } from "../../utilities/fonts"
-import alan from './alan.jpg'
+import alan from '../../../public/lion.svg'
 import Image from "next/image"
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
       <nav className="w sm:w-[95%] lg:w-[90%] flex items-center justify-end relative sm:text-[1.4rem] lg:text-[1rem] 2xl:text-[1.5rem] gap-12">
         <div className="flex items-center gap-[13px] 2xl:gap-6 absolute left-0">
           <div className="h-[32px] sm:h-[50px] lg:h-[40px] 2xl:h-[60px] aspect-square w-auto relative">
-            <Image src={alan} alt="alan" fill={true} className="rounded-[50%]" />
+            <Image src={alan} alt="alan" fill={true} className="rounded-[2px]" />
           </div>
           <Link href='#' className={`${poppins600.className} text-[1.2rem] sm:text-[1.8rem] lg:text-[1.5rem] 2xl:text-[2rem]`}>Portafolio</Link>
         </div>
