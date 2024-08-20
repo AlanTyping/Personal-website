@@ -40,7 +40,7 @@ export default function SchoolSection() {
       transition={{ duration: 1, ease: 'backOut', delay: 0.15 }}
       ref={animatedElementRef}
       className="overflow-hidden overflow-y-scroll px-[27px] text-[0.95rem] z-40 lg:mt-[-120px] xl:mt-[-16px] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center gap-4 flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
-      <motion.p className='md:w-[60%] w pt-[490px] md:pt-[250px]'>
+      <motion.p className='md:w-[60%] w pt-[510px] md:pt-[250px]'>
         Me llamo Alan, tengo 20 años y estoy buscando experiencias para
         aumentar mi conocimiento y poder ser consultor educativo. Si estás leyendo
         esto, probablemente seas parte de un colegio con el que me contacté y
