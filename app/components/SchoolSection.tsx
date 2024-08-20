@@ -13,7 +13,7 @@ export default function SchoolSection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            controls.start({ height: 500 }); // Agregar clase de animación al entrar en la vista
+            controls.start({ height: 460 }); // Agregar clase de animación al entrar en la vista
           } else {
             // Eliminar clase de animación al salir de la vista
           }
@@ -40,7 +40,7 @@ export default function SchoolSection() {
       transition={{ duration: 1, ease: 'backOut', delay: 0.15 }}
       ref={animatedElementRef}
       className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.95rem] z-40 lg:mt-[-120px] xl:mt-[-16px] md:text-[1.1rem] 2xl:text-[1.2rem] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
-      <motion.p className='md:w-[60%] w pt-[130px] md:pt-[10px]'>
+      <motion.p className='md:w-[60%] w pt-[170px] md:pt-[30px]'>
         Me llamo Alan, tengo 20 años y estoy ofreciendo un servicio de aprendizaje único.
       </motion.p>
       <motion.p className='md:w-[60%] w'>
