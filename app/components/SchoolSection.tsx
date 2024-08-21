@@ -37,7 +37,7 @@ export default function SchoolSection() {
     <motion.div
       initial={{ height: 0 }} // Estado inicial fuera de la vista
       animate={controls} // Animación controlada por Framer Motion
-      transition={{ duration: 1.2, ease: 'backOut', delay: 0.15 }}
+      transition={{ duration: 4, ease: 'backOut', delay: 0.15 }}
       ref={animatedElementRef}
       className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.9rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
       <motion.p className='md:w-[60%] w pt-[40px] md:pt-[30px]'>
