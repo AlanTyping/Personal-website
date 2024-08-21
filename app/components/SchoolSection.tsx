@@ -41,7 +41,7 @@ export default function SchoolSection() {
       ref={animatedElementRef}
       className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.9rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
       <motion.p className='md:w-[60%] w pt-[40px] md:pt-[30px]'>
-        Me llamo Alan, tengo 20 años y estoy ofreciendo un servicio de aprendizaje único.
+        Me llamo Alan, tengo 20 años y estoy ofreciendo un servicio de aprendizaje único y gratuito.
       </motion.p>
       <motion.p className='md:w-[60%] w'>
         Soy programador hace 3 años y tengo experiencia en desarrollo web, tanto del lado
@@ -56,7 +56,7 @@ export default function SchoolSection() {
       </motion.p>
       <motion.p
         className='md:w-[60%] w'>
-        Debido a esto voy a ser consultor educativo, pero como no tengo experiencia, necesito aprender, y no se me ocurre
+        Debido a esto voy a ser consultor educativo, pero necesito aprender, y no se me ocurre
         mejor manera que ofreciendo un servicio totalmente único Y gratuito durante 3 meses.
       </motion.p>
       <motion.div className='md:w-[60%] w pb-8'>
