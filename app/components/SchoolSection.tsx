@@ -39,25 +39,22 @@ export default function SchoolSection() {
       animate={controls} // Animación controlada por Framer Motion
       transition={{ duration: 1, ease: 'backOut', delay: 0 }}
       ref={animatedElementRef}
-      className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.9rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
+      className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.95rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
       <motion.p className='md:w-[60%] w pt-[40px] md:pt-[30px]'>
-        Me llamo Alan, tengo 20 años y estoy ofreciendo un servicio de aprendizaje único y gratuito.
-      </motion.p>
-      <motion.p className='md:w-[60%] w'>
-        Soy programador hace 3 años y tengo experiencia en desarrollo web, tanto del lado
+        Me llamo Alan, tengo 20 años y soy programador hace 3 años. Tengo experiencia en desarrollo web, tanto del lado
         del servidor como del lado del cliente. Sin embargo, me di cuenta de que no es lo que quiero.
       </motion.p>
       <motion.p
         className='md:w-[60%] w'>
-        Como mi experiencia en el sistema educativo fue muy mala, siento el propósito
+        En base a mi experiencia en el sistema educativo, siento el propósito
         de ayudar a mejorarlo y que todos podamos tener la mejor experiencia posible,
-        ayudando a resolver problemas clave que generan reacciones negativas en cadena.
+        contribuyendo a resolver problemas clave que generan reacciones negativas en cadena.
         La gracia es enfrentarlos y que esas reacciones sean positivas.
       </motion.p>
       <motion.p
         className='md:w-[60%] w'>
         Debido a esto voy a ser consultor educativo, pero necesito aprender, y no se me ocurre
-        mejor manera que ofreciendo un servicio totalmente único Y gratuito durante 3 meses.
+        mejor manera que ofreciendo un servicio totalmente <span className='font-bold'>único Y gratuito</span> durante 3 meses.
       </motion.p>
       <motion.div className='md:w-[60%] w pb-8'>
         <span>Para más info, consultar el siguiente pdf haciendo <a className='text-[var(--lighterBlue)] border-b-[1px] border-[var(--lighterBlue)]' href="./servicio.pdf" download>click aquí</a>.</span>
