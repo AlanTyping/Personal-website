@@ -39,16 +39,17 @@ export default function SchoolSection() {
       animate={controls} // Animación controlada por Framer Motion
       transition={{ duration: 1, ease: 'backOut', delay: 0 }}
       ref={animatedElementRef}
-      className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.95rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
+      className="overflow-hidden overflow-y-scroll gap-4 px-[27px] text-[0.93rem] md:text-[1.15rem] 2xl:text-[1.4rem] z-40 lg:mt-[-120px] xl:mt-[-16px] flex-center flex-col justify-center w bg-[var(--secondary)] border-y border-[var(--tertiary)] text-white">
       <motion.p className='md:w-[60%] w pt-[40px] md:pt-[30px]'>
-        Me llamo Alan, tengo 20 años y soy programador hace 3 años. Tengo experiencia en desarrollo web, tanto del lado
-        del servidor como del lado del cliente. Sin embargo, me di cuenta de que no es lo que quiero.
+        Me llamo Alan, tengo 20 años y soy programador hace 3. Tengo experiencia en desarrollo web, tanto del lado
+        del servidor como del lado del cliente. Sin embargo, me di cuenta de que la programación no es mi principal camino a seguir,
+        sino una valiosa herramienta para usar cuando lo necesite.
       </motion.p>
       <motion.p
         className='md:w-[60%] w'>
-        En base a mi experiencia en el sistema educativo, siento el propósito
-        de ayudar a mejorarlo y que todos podamos tener la mejor experiencia posible,
-        contribuyendo a resolver problemas clave que generan reacciones negativas en cadena.
+        En base a mi experiencia en el sistema educativo, siento un profundo propósito de contribuir a su mejora
+        y que todos podamos tener la mejor experiencia posible,
+        resolviendo problemas clave que generan reacciones negativas en cadena.
         La gracia es enfrentarlos y que esas reacciones sean positivas.
       </motion.p>
       <motion.p
