@@ -12,16 +12,16 @@ export const projects = [
     //     date: 'Junio 2024 - ???',
     //     color: 'bg-[#4e0000]'
     // },
-    {
-        name: "Web Escolar",
-        descripcion: "Como estoy dando servicios de desarrollo web para escuelas, es interesante ver una muestra como referencia base.",
-        icon: web,
-        date: 'Noviembre 2023 - Diciembre 2023',
-        link: 'https://school-showcase.vercel.app/',
-        image: school,
-        color: 'bg-[#9b650086]',
-        mobileColor: 'bg-[#0064ff45]'
-    },
+    // {
+    //     name: "Web Escolar",
+    //     descripcion: "Muestra de la estructura base de una web escolar",
+    //     icon: web,
+    //     date: 'Noviembre 2023 - Diciembre 2023',
+    //     link: 'https://school-showcase.vercel.app/',
+    //     image: school,
+    //     color: 'bg-[#9b650086]',
+    //     mobileColor: 'bg-[#0064ff45]'
+    // },
     {
         name: "Blue Trading",
         descripcion: "Uno de los problemas en trading es guardar tu progreso, por lo general requiere conocimientos de excel, y no es tan atractivo ver tu progreso dentro de cuadrados. Esta página web te ofrece un buen estilo para ver tu progreso de forma dinámica y gráfica.",
