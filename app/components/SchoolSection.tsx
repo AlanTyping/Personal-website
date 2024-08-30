@@ -43,7 +43,7 @@ export default function SchoolSection() {
       <motion.p className='md:w-[60%] w pt-[50px] md:pt-[30px]'>
         Me llamo Alan, tengo 20 años y soy programador hace tres. Tengo experiencia en desarrollo web, tanto del lado
         del servidor como del lado del cliente. Sin embargo, me di cuenta de que la programación no es mi principal camino a seguir,
-        sino una valiosa herramienta para usar cuando lo necesite.
+        sino una valiosa herramienta para usar cuando la necesite.
       </motion.p>
       <motion.p
         className='md:w-[60%] w'>
