@@ -55,7 +55,7 @@ export default function SchoolSection() {
       <motion.p
         className='md:w-[60%] w'>
         Debido a esto voy a ser consultor educativo, pero necesito aprender, y no se me ocurre
-        mejor manera que ofreciendo un servicio totalmente <span className='font-bold'>único Y gratuito</span> durante 3 meses.
+        mejor manera que ofreciendo un servicio totalmente <span className='font-bold'>único Y gratuito</span> durante 2 meses.
       </motion.p>
       <motion.div className='md:w-[60%] w pb-10 md:pb-8'>
         <span>Para más info, consultar el siguiente pdf haciendo <a className='text-[var(--lighterBlue)] border-b-[1px] border-[var(--lighterBlue)]' href="./servicio.pdf" download>click aquí</a>.</span>
