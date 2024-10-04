@@ -13,8 +13,8 @@ export default function Header() {
           </div>
           <Link href='#' className={`${poppins600.className} text-[1.2rem] sm:text-[1.8rem] lg:text-[1.5rem] 2xl:text-[2rem]`}>Portafolio</Link>
         </div>
-        <Link href='#' className="hidden lg:flex">blog</Link>
-        <Link href='#' className="hidden lg:flex">projectos</Link>
+        {/* <Link href='#' className="hidden lg:flex">blog</Link> */}
+        <Link href='#projects' className="hidden lg:flex">projectos</Link>
         <Link href='mailto:consultor.escuela@gmail.com' className="h-[44px] sm:h-[60px] lg:h-[50px] 2xl:h-[65px] w-[135px] sm:w-[246px] lg:w-[180px] 2xl:w-[266px] border border-[var(--tertiary)] lg:bg-[var(--terciary)] rounded-[3px] flex-center lg:hover:bg-[var(--tertiary)] transition">contacto</Link>
       </nav>
     </header>
