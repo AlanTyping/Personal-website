@@ -20,10 +20,10 @@ export default function Home() {
       <Header />
       <Presentation />
       <KeepGoing />
-      <SchoolSection />
+      {/* <SchoolSection /> */}
       {/* <Blog /> */}
       <Projects />
       <Footer />
-    </div> 
+    </div>
   )
 }
