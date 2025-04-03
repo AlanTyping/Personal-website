@@ -3,6 +3,7 @@ import school from '../../assets/school.png';
 import trading from '../../assets/trading.png';
 import flash from '../../assets/flash.png';
 import speed from '../../assets/speed.png';
+import blogApp from '../../assets/blog_app.png';
 
 export const projects = [
     // {
@@ -22,6 +23,24 @@ export const projects = [
     //     color: 'bg-[#9b650086]',
     //     mobileColor: 'bg-[#0064ff45]'
     // },
+    {
+        name: "Blog App",
+        descripcion: "Aplicación de Android hecha con Flutter, utilizando Clean Architecture con feature-first approach y principios SOLID. El desarrollo no fue rápido, pero fue una experiencia de aprendizaje invaluable que me permitió crear código escalable, estructurado y mantenible. Usé la API proporcionada por Supabase, y PostgreSQL como base de datos.",
+        icon: web,
+        date: 'Marzo 2025 - Abril 2025',
+        image: blogApp,
+        color: 'bg-[#00205f9d]',
+    },
+    {
+        name: "Web Escolar",
+        descripcion: "Muestra de la estructura base de una web escolar",
+        icon: web,
+        date: 'Noviembre 2023 - Diciembre 2023',
+        link: 'https://school-showcase.vercel.app/',
+        image: school,
+        color: 'bg-[#9b650086]',
+        mobileColor: 'bg-[#0064ff45]'
+    },
     {
         name: "Blue Trading",
         descripcion: "Uno de los problemas en trading es guardar tu progreso, por lo general requiere conocimientos de excel, y no es tan atractivo ver tu progreso dentro de cuadrados. Esta página web te ofrece un buen estilo para ver tu progreso de forma dinámica y gráfica.",
