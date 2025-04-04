@@ -30,6 +30,8 @@ export const projects = [
         date: 'Marzo 2025 - Abril 2025',
         image: blogApp,
         color: 'bg-[#00205f9d]',
+        link: 'https://www.youtube.com/watch?v=l-eitQWTo-w',
+        type: 'mobile'
     },
     {
         name: "Web Escolar",

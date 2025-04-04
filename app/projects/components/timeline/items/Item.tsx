@@ -14,9 +14,10 @@ type Props = {
   image?: StaticImageData
   color: string
   mobileColor?: string
+  type?: string
 }
 
-export const Item = ({ name, descripcion, icon, date, link, image, color, mobileColor }: Props) => {
+export const Item = ({ name, descripcion, icon, date, link, image, color, mobileColor, type }: Props) => {
   const animatedElementRef = useRef(null);
   const [visible, setIsVisible] = useState<boolean>(false);
   const [background, setbackground] = useState<string>('');
@@ -29,7 +30,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
           if (entry.isIntersecting) {
             controls.start({ x: 0, opacity: 1 }); // Agregar clase de animación al entrar en la vista
           } else {
-             // Eliminar clase de animación al salir de la vista
+            // Eliminar clase de animación al salir de la vista
           }
         });
       },
@@ -67,7 +68,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
           className="h-auto w-full flex-center justify-center rounded mt-8 2xl:mt-14">
           <div className={`bg-[var(--secondary)] overflow-hidden w-[80%] rounded flex items-center p-4 sm:p-6 2xl:p-8 relative flex-col border-b-[6px] ${name === 'Web Escolar' ? `border-b-[#ffa500]` : 'border-[var(--tertiary)]'} ${visible ? 'bg-red-400' : ''}`}>
             {image && <Image src={image} alt='' className='hidden lg:flex w-[150%] brightness-[30%] top-0 h-auto rounded absolute' style={{ objectFit: 'cover' }} />}
-            
+
             <div className={`hidden lg:flex absolute inset-x-0 inset-y-0 z-[1] ${color}`} />
 
             <div className='w-full mt-2 pb-4 lg:pb-6 2xl:mt-6 flex justify-start z-[1]'>
@@ -88,7 +89,7 @@ export const Item = ({ name, descripcion, icon, date, link, image, color, mobile
                 <p className='text-[0.95rem] sm:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[1.5rem] text-[#e0e0e0]'>{descripcion}</p>
               </div>
               <div className='w-full mt-6 2xl:mt-10 flex justify-start px-1'>
-               {link && <Link href={link} target='blank' className={`p-2 border border-[var(--text)] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>Visitar Sitio</Link>} 
+                {link && <Link href={link} target='blank' className={`p-2 border border-[var(--text)] sm:text-[1.1rem] 2xl:text-[1.5rem] px-4 2xl:px-6 text-white rounded ${poppins400.className}`}>{type == 'mobile' ? 'Ver video' : 'Visitar Sitio'}</Link>}
               </div>
             </div>
           </div>

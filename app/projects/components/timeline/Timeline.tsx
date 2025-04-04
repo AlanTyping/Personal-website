@@ -17,7 +17,8 @@ export const Timeline = () => {
             link={e.link}
             image={e.image}
             color={e.color}
-            // mobileColor={e.mobileColor}
+            type={e.type}
+          // mobileColor={e.mobileColor}
           />)
         }
       </ul>
